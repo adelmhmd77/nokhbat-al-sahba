@@ -1,6 +1,6 @@
 'use client';
 
-import ThreeDPortal from './ThreeDPortal';
+import ThreeDPortal from './components/ThreeDPortal';
 
 export default function Home() {
   return (
