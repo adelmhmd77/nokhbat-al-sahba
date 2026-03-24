@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+    --font-lemon: var(--font-lemonbrush);
+    --font-tufuli: var(--font-tufuli);
+}
+
+@layer base {
+    /* This handles the global "reset" correctly for Tailwind v4 */
+    *, ::after, ::before, ::placeholder {
+        border-color: var(--color-gray-200, currentColor);
+    }
+
+    /* Set default font based on the language of the page */
+    [lang="ar"] {
+        font-family: var(--font-tufuli), serif;
+    }
+
+    [lang="en"] {
+        font-family: var(--font-lemon), sans-serif;
+    }
+}
+
+@keyframes shimmer {
+  to { transform: translateX(200%); }
+}

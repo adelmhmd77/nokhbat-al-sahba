@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\fonts",
-    "\\app\\fonts\\lemon-brush",
-    "\\app\\fonts\\tufuli"
+    "\\app\\[locale]",
+    "\\app\\[locale]\\abu-bakr-al-siddiq"
   ],
-  "SelectedNode": "\\app\\globals.css",
+  "SelectedNode": "\\app\\[locale]\\page.tsx",
   "PreviewInSolutionExplorer": false
 }
