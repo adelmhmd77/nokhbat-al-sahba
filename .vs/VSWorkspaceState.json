@@ -3,8 +3,14 @@
     "",
     "\\app",
     "\\app\\[locale]",
-    "\\app\\[locale]\\abu-bakr-al-siddiq"
+    "\\app\\[locale]\\al-zubayr-ibn-al-awwam",
+    "\\app\\[locale]\\ali-ibn-abi-talib",
+    "\\app\\[locale]\\saad-ibn-abi-waqqas",
+    "\\app\\[locale]\\said-ibn-zayd",
+    "\\app\\[locale]\\talhah-ibn-ubaydullah",
+    "\\app\\[locale]\\umar-ibn-al-khattab",
+    "\\app\\[locale]\\uthman-ibn-affan"
   ],
-  "SelectedNode": "\\app\\[locale]\\page.tsx",
+  "SelectedNode": "\\app\\[locale]\\abu-bakr-al-siddiq\\page.tsx",
   "PreviewInSolutionExplorer": false
 }

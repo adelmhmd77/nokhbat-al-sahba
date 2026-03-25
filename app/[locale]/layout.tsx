@@ -1,28 +1,34 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { lemonbrush, tufuli } from "./fonts";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import "./globals.css"; // Make sure your path is correct
 
-export const metadata: Metadata = {
-  title: "Nokhbet El Sahb",
-  description: "Biographies of the Sahaba",
-};
 export default async function RootLayout({
-  children,
-  params,
+    children,
+    params,
 }: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+    children: React.ReactNode;
+    params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  const direction = locale === "ar" ? "rtl" : "ltr";
+    const { locale } = await params;
 
-  return (
-    <html
-      lang={locale}
-      dir={direction}
-      className={`${lemonbrush.variable} ${tufuli.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
-  );
+    // 1. Validate the locale
+    const locales = ['en', 'ar'];
+    if (!locales.includes(locale)) {
+        notFound();
+    }
+
+    // 2. Fetch the JSON messages for this specific locale
+    const messages = await getMessages();
+
+    return (
+        <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+            <body className="min-h-full flex flex-col">
+                {/* 3. Wrap EVERYTHING in the Provider */}
+                <NextIntlClientProvider locale={locale} messages={messages}>
+                    {children}
+                </NextIntlClientProvider>
+            </body>
+        </html>
+    );
 }

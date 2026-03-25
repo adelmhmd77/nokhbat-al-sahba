@@ -1,4 +1,3 @@
-// middleware.ts
 import createMiddleware from 'next-intl/middleware';
 
 export default createMiddleware({
@@ -6,15 +5,13 @@ export default createMiddleware({
     locales: ['en', 'ar'],
 
     // Used when no locale matches (e.g. visiting "/")
-    defaultLocale: 'en',
+    defaultLocale: 'ar', // Set Arabic as default since it's your main content
 
-    // This ensures that the locale is always prefixed in the URL
-    // e.g., /about -> /en/about
+    // This ensures the URL always has the language (e.g., /en/...)
     localePrefix: 'always'
 });
 
 export const config = {
-    // Match only internationalized pathnames
-    // This regex skips folders like /api, /_next, and static files (e.g. favicon.ico)
-    matcher: ['/', '/(ar|en)/:path*']
+    // Skip all internal paths (_next, images, favicon)
+    matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };

@@ -1,8 +1,9 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
+import { useTranslations } from 'next-intl';
 export default function Home() {
+    const t = useTranslations('Index');
   return (
     <main className="min-h-screen bg-[#050505] relative overflow-x-hidden" dir="rtl">
       
@@ -14,7 +15,7 @@ export default function Home() {
           {/* النص الجامد في الفراغ اللي في النص */}
           <div className="relative z-10 flex flex-col items-center justify-center text-center mt-4">
             <h1 className="text-6xl md:text-8xl font-bold font-tufuli text-white leading-none">
-              نُخْبَةُ <br/> 
+                          {t('title')} <br/> 
               <span className="text-amber-500 tracking-wider">الصَّحَابَة</span>
             </h1>
             <p className="mt-12 text-neutral-400 text-xl max-w-xl font-tufuli leading-relaxed">
