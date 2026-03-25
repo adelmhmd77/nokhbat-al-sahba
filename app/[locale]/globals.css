@@ -3,24 +3,19 @@
 @theme {
     --font-lemon: var(--font-lemonbrush);
     --font-tufuli: var(--font-tufuli);
+    
+    /* ضيف السطرين دول هنا يا حازم عشان التلويند يعرفهم */
+    --animate-spin-slow: spin 10s linear infinite;
+    --animate-reverse-spin: reverse-spin 15s linear infinite;
+
+    /* وضيف الـ Keyframes هنا */
+    @keyframes reverse-spin {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+    }
 }
 
+/* باقي الكود بتاعك يفضل زي ما هو */
 @layer base {
-    /* This handles the global "reset" correctly for Tailwind v4 */
-    *, ::after, ::before, ::placeholder {
-        border-color: var(--color-gray-200, currentColor);
-    }
-
-    /* Set default font based on the language of the page */
-    [lang="ar"] {
-        font-family: var(--font-tufuli), serif;
-    }
-
-    [lang="en"] {
-        font-family: var(--font-lemon), sans-serif;
-    }
-}
-
-@keyframes shimmer {
-  to { transform: translateX(200%); }
+    /* ... */
 }

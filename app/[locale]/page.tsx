@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#050505] relative overflow-x-hidden" dir="rtl">
@@ -138,10 +138,11 @@ export default function Home() {
         أول من آمن من الرجال، ورفيق الهجرة، والرجل الذي ثبتت به الأمة يوم وفاة النبي ﷺ. 
         بذل ماله كله لله، وقاد الأمة في أصعب لحظاتها بقلبٍ يملؤه اليقين.
       </p>
-
-      <button className="px-8 py-3 border border-amber-500/50 text-amber-500 font-tufuli hover:bg-amber-500 hover:text-black transition-all duration-300 rounded-full">
-        اقرأ السيرة كاملة
-      </button>
+<Link href="/ar/abu-bakr-al-siddiq">
+  <button className="px-8 py-3 border border-amber-500/50 text-amber-500 font-tufuli hover:bg-amber-500 hover:text-black transition-all duration-300 rounded-full cursor-pointer">
+    سيرة الصّدّيق
+  </button>
+</Link>
     </motion.div>
 
   </div>
