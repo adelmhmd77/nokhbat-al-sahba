@@ -1,5 +1,14 @@
+import { useTranslations } from 'next-intl';
+
+
 export default function AliIbnAbiTalib() {
+    const t = useTranslations('aliIbnAbiTlib');
+
     return (
-        <div>علي بن أبي طالب</div>
+        <div>
+            
+            <h1>{t('title')}</h1>
+            
+            </div>
     );
 }
