@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+    --font-lemon: var(--font-lemonbrush);
+    --font-tufuli: var(--font-tufuli);
+}
 
 @layer base {
     /* This handles the global "reset" correctly for Tailwind v4 */
@@ -9,12 +13,15 @@
 
     /* Set default font based on the language of the page */
     [lang="ar"] {
+        font-family: var(--font-tufuli), serif;
     }
 
     [lang="en"] {
+        font-family: var(--font-lemon), sans-serif;
     }
 }
 
-@keyframes shimmer {
-  to { transform: translateX(200%); }
+/* باقي الكود بتاعك يفضل زي ما هو */
+@layer base {
+    /* ... */
 }

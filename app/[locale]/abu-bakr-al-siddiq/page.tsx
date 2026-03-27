@@ -274,4 +274,6 @@ export default function AbuBakrAlSiddiq() {
             </section>
         </main>
     );
+  
+
 }

@@ -1,6 +1,94 @@
 {
   "Index": {
-    "title": "Nokhbat Al-Sahaba",
-    "description": "Biographies of the companions of the Prophet."
+    "title": "THE ELITE",
+    "hero_subtitle": "Explore the biographies of the nation's finest through a unique interactive visual experience.",
+    "why_title": "Why Nokhbet El Sahaba?",
+    "why_description": "In an era of accelerating events, we return to seek steadfastness from a generation that shaped history with their sincerity. 'Nokhbet El Sahaba' is not merely a website, but a visual journey sailing through the lives of the Ten Promised Paradise, witnessing the pivotal moments that changed the face of the world.",
+    "start_journey": "Begin the Journey",
+    "intro_quote": "They were the ones who bridged the Earth and the Heavens. Men who did not just make history, they were history itself. Ten moons that illuminated the nation's path—each with a story to be told, and a legacy that never fades.",
+    "intro_footer": "Prepare yourself... for we stand now in the presence of the Immortals.",
+    "read_more": "Read Full Biography",
+    "companions": {
+      "abu_bakr": {
+        "order": "The First Companion",
+        "nickname": "The One Manumitted from the Fire",
+        "name_part1": "Abu Bakr",
+        "name_part2": "Al-Siddiq",
+        "bio": "If the faith of Abu Bakr were weighed against the faith of the people of the earth, it would outweigh them. The first man to embrace Islam, the companion of the Hijra, and the pillar who kept the nation firm upon the Prophet's ﷺ passing.",
+        "btn": "Read Full Biography"
+      },
+      "omar": {
+        "order": "The Second Companion",
+        "nickname": "Al-Farouq",
+        "name_part1": "Omar bin",
+        "name_part2": "Al-Khattab",
+        "bio": "Had there been a prophet after me, it would have been Omar. He through whom Allah empowered Islam and distinguished truth from falsehood. The giant of Islam whose justice echoed across the earth.",
+        "btn": "Explore Al-Farouq's Justice"
+      },
+      "othman": {
+        "order": "The Third Companion",
+        "nickname": "Possessor of the Two Lights",
+        "name_part1": "Othman bin",
+        "name_part2": "Affan",
+        "bio": "Should I not feel shy before a man whom even the angels are shy of? Renowned for his deep modesty and immense generosity, he compiled the Quran and illuminated his heart with the light of faith.",
+        "btn": "Biography of Dhul-Nurayn"
+      },
+      "ali": {
+        "order": "The Fourth Companion",
+        "nickname": "The Victorious Lion of Allah",
+        "name_part1": "Ali bin",
+        "name_part2": "Abi Talib",
+        "bio": "Are you not content to be to me as Aaron was to Moses? The gateway to the city of knowledge, the hero of Khaybar, and the first youth to embrace Islam. He combined valor in the field with eloquence of the tongue.",
+        "btn": "Eloquence of Abu Turab"
+      },
+      "talha": {
+        "order": "The Fifth Companion",
+        "nickname": "Talha the Good",
+        "name_part1": "Talha bin",
+        "name_part2": "Ubaydullah",
+        "bio": "Whoever wishes to look at a martyr walking upon the earth, let him look at Talha. One of the foremost in Islam, the knight who shielded the Prophet ﷺ with his own body at Uhud until his hand was paralyzed.",
+        "btn": "Biography of Talha Al-Khayr"
+      },
+      "zubair": {
+        "order": "The Sixth Companion",
+        "nickname": "The Disciple of Allah's Messenger",
+        "name_part1": "Al-Zubair bin",
+        "name_part2": "Al-Awwam",
+        "bio": "Every prophet has a disciple, and my disciple is Al-Zubair. The cousin of the Prophet ﷺ and the first to unsheathe a sword for the sake of Allah. A knight who fought with the strength of an entire army.",
+        "btn": "Biography of the Disciple"
+      },
+      "abdurrahman": {
+        "order": "The Seventh Companion",
+        "nickname": "The Generous Trustee",
+        "name_part1": "Abdurrahman",
+        "name_part2": "bin Awf",
+        "bio": "May Allah bless what you have given. One of the six members of the Shura council, and the merchant who dedicated his entire wealth to Islam. He remained an ascetic despite his vast riches.",
+        "btn": "Biography of the Generous"
+      },
+      "saad": {
+        "order": "The Eighth Companion",
+        "nickname": "The Maternal Uncle of the Messenger",
+        "name_part1": "Saad bin",
+        "name_part2": "Abi Waqqas",
+        "bio": "Shoot, O Saad! May my father and mother be sacrificed for you. The first to fire an arrow in the way of Allah and the hero of Qadisiyyah who extinguished the fires of the Persians forever.",
+        "btn": "Heroism of the Knight"
+      },
+      "saeed": {
+        "order": "The Ninth Companion",
+        "nickname": "The One of Answered Prayers",
+        "name_part1": "Saeed bin",
+        "name_part2": "Zaid",
+        "bio": "One of the foremost in Islam and the knight of Yarmouk. A man of deep asceticism and piety, he was one of the ten to whom the Prophet ﷺ bore witness of Paradise while they still walked the earth.",
+        "btn": "Biography of the Ascetic"
+      },
+      "abu_ubaida": {
+        "order": "The Tenth Companion",
+        "nickname": "The Trustee of the Nation",
+        "name_part1": "Abu Ubaida",
+        "name_part2": "bin Al-Jarrah",
+        "bio": "Every nation has a trustee, and the trustee of this nation is Abu Ubaida. The conqueror of the Levant and the ascetic leader who prioritized the afterlife over all worldly gains.",
+        "btn": "Biography of the Trustee"
+      }
+    }
   }
 }
