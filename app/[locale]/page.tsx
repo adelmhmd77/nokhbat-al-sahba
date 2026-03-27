@@ -16,7 +16,6 @@ export default function Home() {
           <div className="relative z-10 flex flex-col items-center justify-center text-center mt-4">
             <h1 className="text-6xl md:text-8xl font-bold font-tufuli text-white leading-none">
               {t('title')} <br/> 
-              <span className="text-amber-500 tracking-wider">الصَّحَابَة</span>
             </h1>
             <p className="mt-12 text-neutral-400 text-xl max-w-xl font-tufuli leading-relaxed">
               {t('hero_subtitle')}
@@ -659,12 +658,11 @@ export default function Home() {
     className="relative z-10 text-center px-6 max-w-4xl"
   >
     <h2 className="text-4xl md:text-6xl font-bold text-white font-tufuli mb-8">
-      أُولَٰئِكَ الَّذِينَ <span className="text-amber-500">هَدَى اللَّهُ</span>
+        {t('footerout')}
     </h2>
     <p className="text-xl md:text-2xl text-zinc-300 font-tufuli leading-relaxed mb-12">
-      ليست هذه مجرد أسماء في كتب التاريخ، بل هم مناراتٌ أضاءت للبشرية طريق الحق والعدل. 
-      سيرتهم عطاءٌ لا ينضب، وقصصهم زادٌ للأرواح.. ندعوك لتبحر في تفاصيل حياتهم، 
-      لتستلهم من شجاعتهم، حلمهم، وكرمهم ما يضيء لك دربك.
+              {t('footerp')}
+
     </p>
     <motion.button 
       whileHover={{ scale: 1.05 }}
