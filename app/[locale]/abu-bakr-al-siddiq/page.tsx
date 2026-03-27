@@ -81,7 +81,7 @@ export default function AbuBakrAlSiddiq() {
           className="text-center mb-24"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-tufuli leading-none mb-8 text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-50 to-blue-200 drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-            مَنْ هُوَ الصِّدِّيق؟
+{t('biography.sectionTitle')}
           </h2>
           <div className="w-40 h-1.5 bg-amber-500 mx-auto rounded-full shadow-[0_0_15px_#f59e0b]" />
         </motion.div>
