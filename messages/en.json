@@ -92,5 +92,272 @@
     },
     "footerout":"Those Are the Ones Whom Allah Has Guided",
     "footerp":"These are not just names in the pages of history, but beacons that illuminated the path of truth and justice for humanity. Their lives are an endless source of inspiration, and their stories are nourishment for the soul. We invite you to dive into the details of their lives, to draw from their courage, wisdom, and generosity what can light your own path."
+  },
+  
+  "abuBakrAlSiddiq": {
+    "hero": {
+      "subtitle": "The First Man to Believe",
+      "title": "Abu Bakr Al-Siddiq",
+      "verse": "The second of two, when they were both in the cave"
+    },
+
+    "timeline": {
+      "label": "A Journey of Truth and Devotion"
+    },
+
+    "biography": {
+      "sectionTitle": "Who Is Al-Siddiq?",
+
+      "card1": {
+        "title": "Lineage & Birth",
+        "imageAlt": "Evocation of a noble childhood",
+        "body": "Abdullah ibn Abi Quhafa was born in Mecca two years and six months after the Year of the Elephant. He was raised in one of the most distinguished households of Quraysh, the clan of Banu Taym. His father Abu Quhafa and his mother Umm al-Khayr were both people of standing. He grew up embodying the noblest of character even in the age of ignorance — he never once drank wine, and never once prostrated before an idol, for his pure nature knew instinctively that these idols could neither benefit nor harm.",
+        "highlights": {
+          "birthplace": "Mecca",
+          "tribe": "Banu Taym"
+        }
+      },
+
+      "card2": {
+        "title": "His Standing Among Quraysh",
+        "imageAlt": "Al-Siddiq the merchant",
+        "body": "Al-Siddiq was a prosperous and successful cloth merchant, widely known for his honesty and trustworthiness. People sought his counsel for his sound judgment and encyclopedic knowledge of Arab lineages. Quraysh would consult him in matters of blood money and tribal obligations, and whatever he undertook, they trusted him in it. His friendship with the Prophet ﷺ predated the revelation itself, born of a profound resemblance in character — he was the companion before the message.",
+        "highlights": {
+          "profession": "cloth merchant"
+        }
+      },
+
+      "card3": {
+        "title": "His Appearance & Titles",
+        "traits": {
+          "label": "Appearance:",
+          "body": "He was slender in build, fair in complexion, with light hair on his cheeks. He carried an air of dignity and gravity, softened by a tenderness of heart and a deep compassion."
+        },
+        "titles": {
+          "label": "His Titles:",
+          "body": "He was called Al-Atiq for the beauty of his face, and some say because God freed him from the Fire. He was called Al-Siddiq for being the first to believe the Prophet ﷺ without a moment's hesitation.",
+          "names": {
+            "alAtiq": "Al-Atiq",
+            "alSiddiq": "Al-Siddiq"
+          }
+        }
+      },
+
+      "sources": {
+        "title": "Historical References",
+        "intro": "This information is drawn from:",
+        "list": [
+          {
+            "number": "1",
+            "title": "Al-Bidaya wal-Nihaya",
+            "author": "Imam Ibn Kathir (Sira volumes)"
+          },
+          {
+            "number": "2",
+            "title": "Siyar A'lam al-Nubala",
+            "author": "Imam al-Dhahabi (biography of Al-Siddiq, may God be pleased with him)"
+          },
+          {
+            "number": "3",
+            "title": "Tarikh al-Khulafa",
+            "author": "Imam al-Suyuti"
+          }
+        ]
+      }
+    },
+
+    "faith": {
+      "sectionTitle": "The Dawn of Faith",
+      "sectionSubtitle": "I called no one to Islam but he hesitated… except Abu Bakr",
+
+      "card1": {
+        "title": "Belief Without Hesitation",
+        "body": "Abu Bakr's conversion was no passing event — it was the fruit of years of deep friendship with the Prophet ﷺ. When the revelation descended, the Prophet ﷺ went to him and presented the matter. Without asking for a sign or demanding a miracle, he believed on the spot. The Prophet ﷺ said of him: 'I called no one to Islam but he paused and deliberated — except Abu Bakr. When I told him, he did not waver nor hesitate for a moment.'",
+        "highlights": {
+          "action": "believed on the spot"
+        }
+      },
+
+      "card2": {
+        "title": "The Man Who Brought a Nation",
+        "body": "Al-Siddiq did not stop at his own faith. He immediately set out to call those he trusted. Through him, Islam reached giants who would later shake the earth — five of the ten promised Paradise: Uthman ibn Affan, al-Zubayr ibn al-Awwam, Abd al-Rahman ibn Awf, Saad ibn Abi Waqqas, and Talha ibn Ubaydullah. Each of them stands in the scale of his good deeds, for he was the key that opened their hearts to the light.",
+        "highlights": {
+          "group": "the ten promised Paradise"
+        },
+        "companions": [
+          "Uthman ibn Affan",
+          "Al-Zubayr ibn al-Awwam",
+          "Abd al-Rahman ibn Awf",
+          "Saad ibn Abi Waqqas",
+          "Talha ibn Ubaydullah"
+        ]
+      },
+
+      "card3": {
+        "title": "Spending Without Fear of Poverty",
+        "body": "In Mecca, the weak were being tortured for their faith. Al-Siddiq deployed his mightiest weapon: his wealth. He purchased and freed seven souls who were being tormented for the sake of God, foremost among them Bilal ibn Rabah, the caller to prayer of the Messenger ﷺ. His father Abu Quhafa said to him: 'My son, I see you freeing the weak and frail — why not free strong men who could protect you?' Al-Siddiq replied with certainty: 'Father, I only seek what is with God.'",
+        "highlights": {
+          "weapon": "his wealth",
+          "bilal": "Bilal ibn Rabah"
+        },
+        "quote": "Father, I only seek what is with God."
+      },
+
+      "sources": {
+        "title": "Section References",
+        "list": [
+          {
+            "number": "1",
+            "title": "Al-Sira al-Nabawiyya",
+            "author": "Ibn Hisham (account of Abu Bakr's conversion)"
+          },
+          {
+            "number": "2",
+            "title": "Al-Rahiq al-Makhtum",
+            "author": "Safi al-Rahman al-Mubarakpuri"
+          },
+          {
+            "number": "3",
+            "title": "Usd al-Ghaba fi Ma'rifat al-Sahaba",
+            "author": "Ibn al-Athir"
+          }
+        ]
+      }
+    },
+
+    "loyalty": {
+      "sectionTitle": "Why Al-Siddiq?",
+      "sectionSubtitle": "A Love Story That Came Before the Journey",
+      "body": "Al-Siddiq's selection for the migration was no accident — it was a decision made by the heart before the revelation gave its leave. When the Prophet ﷺ asked: 'Companionship, O Abu Bakr?', Al-Siddiq burst into tears of overwhelming joy. He did not weep from fear of the death that lay in wait for them both — he wept because he had been chosen to be the shadow of God's Messenger ﷺ.",
+      "prophetQuestion": "Companionship, O Abu Bakr?",
+      "reflection": "If I am killed, I am but one man. But if he ﷺ is killed, the entire nation is lost.",
+      "closingPoem": "Is it not from love that Al-Siddiq wept? Yes — and from sacrifice that minds were left in awe."
+    },
+
+    "cave": {
+      "sectionTag": "The Moment That Held History's Breath",
+      "sectionTitle": "The Second of Two",
+      "sectionTitleHighlight": "When They Were Both in the Cave",
+      "imageAlt": "The second of two in the cave",
+      "body1": "In the darkness of the Cave of Thawr, Al-Siddiq had no fear for his own life — his heart trembled with terror for the light of prophethood. When the feet of the idolaters drew so close he could see them through the cracks in the rock, he whispered through tears of devotion: 'O Messenger of God, if any of them looked down at his feet, he would see us.'",
+      "whisper": "O Messenger of God, if any of them looked down at his feet, he would see us.",
+      "body2": "In that moment, Al-Siddiq was not thinking of his trade or his family — he was thinking only of how to shield the body of the Prophet ﷺ with his own chest. Then came the voice of tranquility that shook the mountains of Mecca:",
+      "divineResponse": "Do not grieve; indeed God is with us.",
+      "body3": "Fear turned to serenity, and constriction became a way out — so that the world might know that when God is with you, there is no room for the impossible.",
+      "stats": {
+        "bond": {
+          "label": "The Bond",
+          "value": "Companionship in ease and hardship"
+        },
+        "result": {
+          "label": "The Outcome",
+          "value": "Tranquility descended; victory was assured"
+        }
+      },
+      "highlights": {
+        "prophetsLight": "the light of prophethood"
+      }
+    },
+
+    "medina": {
+      "sectionTitle": "The Lights of Medina",
+      "sectionSubtitle": "The Beginning of a New Era",
+      "imageAlt": "Arrival at the City of the Prophet",
+      "body1": "The blessed caravan arrived at Quba, and it was a day the likes of which Medina had never witnessed. Al-Siddiq stood shielding the Prophet ﷺ from the scorching sun with his cloak, as the people rushed forward in eager wonder — unsure which of the two was the Messenger, until they saw the shadow of Al-Siddiq and understood the rank of the companion beside the one he accompanied.",
+      "body2": "Medina was no mere stopover — it was a home that Al-Siddiq built with his wealth and effort. He purchased the land for the mosque, and together with the Prophet ﷺ laid the foundations of the new state. He remained the inseparable shadow, the counselor whom no one could surpass in opinion or advice.",
+      "tagline": "The Elite of Loyalty"
+    },
+
+    "foundation": {
+      "sectionTag": "The Founding of a Nation",
+      "sectionTitle": "The Founder",
+      "sectionTitleHighlight": "And the First Minister",
+      "imageAlt": "The building of the Prophet's Mosque",
+      "body1": "The stability of Medina could not have been achieved without the blessed wealth of Al-Siddiq. When the Prophet ﷺ wished to build his mosque, Abu Bakr purchased the land from two orphans — making him the first financier of the greatest edifice in the history of Islam.",
+      "highlights": {
+        "firstSponsor": "the first financier"
+      },
+      "quote": "Al-Siddiq in Medina was like the Prophet's own shadow that never left him — his hand with which he built, his mind he consulted in every matter. No one preceded him in digging a well, feeding the hungry, or reconciling hearts.",
+      "body2": "In every corner of Medina, Abu Bakr left his mark — from organizing the market to managing the affairs of the Muslims. He was the faithful minister who bore the weight of the nascent state upon his shoulders with love and the deepest humility.",
+      "achievements": [
+        "Purchased the land of the mosque",
+        "The Prophet's chief counselor"
+      ]
+    },
+
+    "steadfastness": {
+      "sectionTag": "The Most Difficult Moment",
+      "sectionTitle": "The Mountain",
+      "sectionTitleHighlight": "That Did Not Tremble",
+      "imageAlt": "Steadfastness at the Prophet's Chamber",
+      "body": "Medina shook. Men wept. Minds reeled. Then Al-Siddiq emerged. With a heart filled with certainty, he spoke his immortal words:",
+      "immortalWords": "Whoever worshipped Muhammad — Muhammad has died. Whoever worshipped God — God is Ever-Living and shall never die.",
+      "aftermath": "In that moment, he was the pillar that kept the nation from shattering, and restored it to the path of truth with the steadfastness of prophets."
+    },
+
+    "caliphate": {
+      "sectionTitle": "The Caliphate of Al-Siddiq",
+      "sectionSubtitle": "The Epic & The Achievement",
+      "imageAlt": "The caliphate of Al-Siddiq and the Ridda Wars",
+      "body1": "He took up the burden of the caliphate and proved to be the decisive leader whose resolve never bent. He dispatched the army of Usama ibn Zayd despite every pressure to withdraw, waged the Ridda Wars with the heart of a lion, and reunited the Muslims at a time when everyone thought their state had come to an end. He sought neither prestige nor power — he was simply fulfilling his covenant with his beloved ﷺ.",
+      "highlights": {
+        "riddahWars": "the Ridda Wars"
+      },
+      "body2": "Yet even in the midst of war, he did not forget the compilation of the Holy Quran. Fearing its loss with the martyrdom of its memorizers, he ordered it gathered into a single manuscript — an act that became the light illuminating the path of the nation for all the centuries that followed. The caliphate of Al-Siddiq was an epic of building and unification, cementing the foundations of the state and preserving the community of believers.",
+      "highlights2": {
+        "quranCompilation": "the compilation of the Holy Quran"
+      }
+    },
+
+    "farewell": {
+      "sectionTitle": "The Departure & The Reunion",
+      "sectionSubtitle": "In the Company of the Beloved ﷺ",
+      "imageAlt": "Al-Siddiq buried beside the Prophet",
+      "body": "On a quiet night in Medina, the soul of Al-Siddiq returned to its Creator. He was buried beside his beloved ﷺ — the second of two in the cave, and the second of two in the grave. He left behind a united nation, a steadfast state, and a fragrant legacy that fills the world with light and guidance. He was the finest successor to the finest of predecessors. May God have mercy on him with a vast mercy, and reward him on behalf of Islam and the Muslims with the greatest of rewards.",
+      "highlights": {
+        "dualCompanion": "the second of two in the cave, and the second of two in the grave"
+      },
+      "closingTag": "The Elite of the Companions — Abu Bakr Al-Siddiq"
+    },
+
+    "images": {
+      "symbol": {
+        "src": "/abu_bakr_symbol.png",
+        "alt": "Symbol of Al-Siddiq"
+      },
+      "childhood": {
+        "src": "/abu_bakr_childhood.png",
+        "alt": "Evocation of a noble childhood"
+      },
+      "merchant": {
+        "src": "/abu_bakr_merchant.png",
+        "alt": "Al-Siddiq the merchant"
+      },
+      "cave": {
+        "src": "/hijra_cavee.png",
+        "alt": "The second of two in the cave"
+      },
+      "medinaArrival": {
+        "src": "/medina_arrivall.png",
+        "alt": "Arrival at the City of the Prophet"
+      },
+      "buildingMedina": {
+        "src": "/building_medina.png",
+        "alt": "The building of the Prophet's Mosque"
+      },
+      "nabawiHujra": {
+        "src": "/nabawi_hujra.png",
+        "alt": "Steadfastness at the Prophet's Chamber"
+      },
+      "khalifaBkr": {
+        "src": "/khalifa_bkr.png",
+        "alt": "The caliphate of Al-Siddiq and the Ridda Wars"
+      },
+      "finalMedina": {
+        "src": "/final_medina.png",
+        "alt": "Al-Siddiq buried beside the Prophet"
+      }
+    }
   }
+
 }

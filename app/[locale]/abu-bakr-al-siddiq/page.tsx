@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function AbuBakrAlSiddiq() {
+  const t = useTranslations('abuBakrAlSiddiq');
   return (
     <main className="relative min-h-screen bg-[#020617] text-white overflow-hidden flex flex-col items-center py-20">
       
@@ -23,17 +25,15 @@ export default function AbuBakrAlSiddiq() {
         className="text-center z-10 px-6"
       >
         <span className="text-amber-400/80 font-tufuli tracking-[0.5em] text-xs md:text-sm uppercase mb-6 block border-b border-amber-400/20 pb-2 max-w-fit mx-auto">
-          أوّلُ مَنْ آمَنَ مِنَ الرِّجَال
+{t('hero.subtitle')}
         </span>
         
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-tufuli leading-none mb-8 text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-50 to-blue-200 drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-          أبو بكر الصديق
+{t('hero.title')}
         </h1>
         
-        <p className="text-lg md:text-xl font-tufuli text-blue-100/70 max-w-2xl mx-auto leading-relaxed italic">
-          ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ
-        </p>
-      </motion.div>
+        <p className="text-lg md:text-xl font-tufuli text-blue-100/70 max-w-2xl mx-auto leading-relaxed italic"></p>
+      </motion.div> 
 {/* 3. الشعار (قطعة نورانية عائمة بدون صندوق) */}
 <motion.div 
   initial={{ scale: 0.9, opacity: 0 }}
