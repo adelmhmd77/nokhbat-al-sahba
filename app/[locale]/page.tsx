@@ -13,11 +13,11 @@ export default function Home() {
         {/* الحاوية اللي فيها الزخرفة والنص */}
         <div className="relative w-full max-w-5xl aspect-[1/1] flex flex-col items-center justify-center">
           {/* النص الجامد في الفراغ اللي في النص */}
-          <div className="relative z-10 flex flex-col items-center justify-center text-center mt-4">
-            <h1 className="text-6xl md:text-8xl font-bold font-tufuli text-white leading-none">
+          <div className="relative z-10 flex flex-col items-center justify-center text-center">
+            <h1 className=" text-8xl font-bold text-amber-500 mb-8 font-tufuli leading-tight">
               {t('title')} <br/> 
             </h1>
-            <p className="mt-12 text-neutral-400 text-xl max-w-xl font-tufuli leading-relaxed">
+            <p className=" text-neutral-400 text-xl max-w-xl font-tufuli leading-relaxed">
               {t('hero_subtitle')}
             </p>
           </div>
@@ -286,11 +286,11 @@ export default function Home() {
     <motion.div 
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+      transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative w-full md:w-1/2 aspect-square group"
+      className="relative w-full md:w-1/2 aspect-[3/4] md:aspect-square group"
     >
-      <div className="absolute inset-0 bg-blue-900/10 rounded-full blur-[120px] group-hover:bg-amber-500/20 transition-all duration-700"></div>
+      <div className="absolute inset-0 bg-amber-600/10 rounded-full blur-[120px] group-hover:bg-amber-600/20 transition-all duration-700"></div>
       
       <div className="relative z-10 w-full h-full border border-amber-500/20 rounded-3xl overflow-hidden backdrop-blur-md bg-zinc-900/10">
          <Image 

@@ -146,7 +146,7 @@ export default function UmarIbnAlKhattab() {
     {/* هالة ضوئية خفيفة جداً تحت السيكشن عشان تفصل بينه وبين اللي بعده */}
     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-[#7b001c]/40 to-transparent" />
 </section>
-<section className="relative py-40 flex flex-col items-center justify-center overflow-hidden">
+<section className="relative p-[2rem] flex flex-col items-center justify-center overflow-hidden">
     {/* خلفية مضيئة خافتة جداً تحت الكلام */}
     <div className="absolute w-[800px] h-[300px] bg-[#7b001c]/10 blur-[150px] rounded-full z-0" />
 
@@ -173,6 +173,331 @@ export default function UmarIbnAlKhattab() {
             className="h-[2px] bg-gradient-to-r from-transparent via-[#7b001c] to-transparent mx-auto mt-12"
         />
     </motion.div>
+</section>
+<section className="relative z-10 flex flex-col items-center justify-center py-24 px-6 overflow-hidden">
+    {/* عنوان السيكشن */}
+    <motion.h2 
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="text-4xl md:text-5xl text-[#7b001c] font-bold font-amiri drop-shadow-[0_0_15px_rgba(123,0,28,0.3)] text-center mb-16"
+    >
+        {t("FindOutWhy.title")}
+    </motion.h2>
+
+    {/* الـ Grid Container للكروت */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+        
+        {/* الكارت الأول (السبب) */}
+        <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="bg-[#1a0505]/40 border border-[#7b001c]/20 p-8 rounded-2xl flex flex-col justify-center items-center text-center shadow-2xl shadow-[#7b001c]/10 backdrop-blur-sm group hover:border-[#7b001c]/50 transition-all duration-500"
+        >
+            <p className="text-xl md:text-2xl text-slate-100 leading-[1.8] font-amiri font-medium px-4">
+                {t.rich("FindOutWhy.sectionOne", {
+                    blood: (w) => <span className="text-[#7b001c] font-bold">{w}</span>
+                })}
+            </p>
+        </motion.div>
+
+        {/* الكارت الثاني (الأفعال) */}
+        <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="bg-[#1a0505]/40 border border-[#7b001c]/20 p-8 rounded-2xl flex flex-col justify-center items-center text-center shadow-2xl shadow-[#7b001c]/10 backdrop-blur-sm group hover:border-[#7b001c]/50 transition-all duration-500"
+        >
+            <p className="text-xl md:text-2xl text-slate-100 leading-[1.8] font-amiri font-medium px-4">
+                {t.rich("FindOutWhy.sectionTwo", {
+                    blood: (w) => <span className="text-[#7b001c] font-bold">{w}</span>
+                })}
+            </p>
+        </motion.div>
+
+        {/* الكارت الثالث (الذروة) */}
+        <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="bg-[#1a0505]/40 border border-[#7b001c]/20 p-8 rounded-2xl flex flex-col justify-center items-center text-center shadow-2xl shadow-[#7b001c]/10 backdrop-blur-sm group hover:border-[#7b001c]/50 transition-all duration-500 col-span-1 md:col-span-2 lg:col-span-1"
+        >
+            <p className="text-xl md:text-2xl text-slate-100 leading-[1.8] font-amiri font-medium px-4">
+                {t.rich("FindOutWhy.sectionThree", {
+                    focus: (w) => <span className="text-[#fbbf24] font-bold drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]">{w}</span>
+                })}
+            </p>
+        </motion.div>
+    </div>
+</section>
+<section className="relative min-h-screen py-32 px-6 flex flex-col items-center justify-center overflow-hidden">
+    
+    {/* 🎬 الخلفية السينمائية */}
+    <div className="absolute inset-0 z-0">
+        <Image 
+            src="/umar-enlightenment.png"
+            alt="Umar Enlightenment"
+            fill
+            className="object-cover object-center opacity-100 "
+            priority
+        />
+
+        {/* طبقات الظلام + الأحمر */}
+        <div className="absolute inset-0 bg-[#050000] opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-[#7b001c]/20 to-[#050000]" />
+    </div>
+
+    {/* ✨ المحتوى */}
+    <div className="relative z-10 max-w-5xl mx-auto text-center space-y-20">
+
+        {/* 🏆 العنوان */}
+        <motion.h2 
+            initial={{ y: 40, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-6xl text-[#7b001c] font-bold font-amiri drop-shadow-[0_0_25px_rgba(123,0,28,0.5)]"
+        >
+            {t("storyTime.title")}
+        </motion.h2>
+
+        {/* 🧱 sectionOne */}
+        <motion.p 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-4xl text-slate-100 leading-[1.9] font-amiri px-4"
+        >
+            {t.rich("storyTime.sectionOne", {
+                light: (w) => (
+                    <span className="text-[#fbbf24] font-bold drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]">
+                        {w}
+                    </span>
+                )
+            })}
+        </motion.p>
+
+        {/* 🧱 sectionTwo */}
+        <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-4xl text-slate-100 leading-[2] font-amiri font-bold pt-12 border-t border-[#7b001c]/20"
+        >
+            {t.rich("storyTime.sectionTwo", {
+                light: (w) => <span className="text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">{w}</span>,
+                gold: (w) => <span className="text-[#fbbf24] drop-shadow-[0_0_15px_rgba(251,191,36,0.5)]">{w}</span>
+            })}
+        </motion.p>
+
+        {/* 💥 sectionThree */}
+        <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-3xl text-slate-200 leading-[2] font-amiri"
+        >
+            {t.rich("storyTime.sectionThree", {
+                highlight: (w) => (
+                    <span className="text-[#fbbf24] font-bold animate-pulse">
+                        {w}
+                    </span>
+                )
+            })}
+        </motion.p>
+
+        {/* ⚡ sectionFour (قرار التحول) */}
+        <motion.p 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-5xl text-white font-amiri leading-[2.2]"
+        >
+            {t.rich("storyTime.sectionFour", {
+                glow: (w) => (
+                    <span className="text-[#fbbf24] font-bold drop-shadow-[0_0_20px_rgba(251,191,36,0.8)] animate-[pulse_2s_infinite]">
+                        {w}
+                    </span>
+                )
+            })}
+        </motion.p>
+
+        {/* 🧱 sectionFive */}
+        <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-3xl text-slate-300 leading-[2] font-amiri"
+        >
+            {t("storyTime.sectionFive")}
+        </motion.p>
+
+        {/* 🔥 sectionSix (الشهادة) */}
+        <motion.p 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-5xl text-white font-amiri leading-[2.2] border-t pt-10 border-[#fbbf24]/20"
+        >
+            {t.rich("storyTime.sectionSix", {
+                glow: (w) => (
+                    <span className="text-[#fbbf24] font-bold drop-shadow-[0_0_25px_rgba(251,191,36,1)]">
+                        {w}
+                    </span>
+                )
+            })}
+        </motion.p>
+
+        {/* ⚡ sectionSeven */}
+        <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-3xl text-slate-300 leading-[2] font-amiri"
+        >
+            {t.rich("storyTime.sectionSeven", {
+                highlight: (w) => (
+                    <span className="text-white font-bold drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+                        {w}
+                    </span>
+                )
+            })}
+        </motion.p>
+
+        {/* 🏁 النهاية */}
+        <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.4 }}
+            viewport={{ once: true }}
+            className="text-xl md:text-2xl text-[#fbbf24]/80 font-amiri italic"
+        >
+            {t("storyTime.sectionEight")}
+        </motion.p>
+
+    </div>
+</section>
+{/* ما بعد نطق الشهادة */}
+<section className="relative min-h-screen py-32 px-6 flex items-center justify-center overflow-hidden">
+
+    {/* 🔥 خلفية درامية (أحمر + ظلال قوية) */}
+    <div className="absolute inset-0 z-0">
+        <Image 
+            src="/umar-power.png"
+            alt="Umar Strength"
+            fill
+            className="object-cover opacity-10"
+        />
+
+        <div className="absolute inset-0 bg-black opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-[#7b001c]/20 to-black" />
+    </div>
+
+    {/* ⚡ المحتوى */}
+    <div className="relative z-10 max-w-6xl mx-auto space-y-24 text-center">
+
+        {/* 🏆 العنوان */}
+        <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-5xl md:text-7xl font-bold text-white font-amiri tracking-wide"
+        >
+            {t("afterGuidance.title")}
+        </motion.h2>
+
+        <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="text-xl md:text-2xl text-[#fbbf24]/80 font-amiri"
+        >
+            {t("afterGuidance.subtitle")}
+        </motion.p>
+
+        {/* ⚔️ Grid Layout (قوة + توازن) */}
+        <div className="grid md:grid-cols-2 gap-12">
+
+            {/* 🧱 Card 1 */}
+            <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                className="p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#fbbf24]/40 transition"
+            >
+                <p className="text-2xl text-slate-200 leading-[2] font-amiri">
+                    {t("afterGuidance.sectionOne")}
+                </p>
+            </motion.div>
+
+            {/* 🧱 Card 2 */}
+            <motion.div 
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                className="p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#fbbf24]/40 transition"
+            >
+                <p className="text-2xl text-slate-200 leading-[2] font-amiri">
+                    {t("afterGuidance.sectionTwo")}
+                </p>
+            </motion.div>
+
+            {/* 🧱 Card 3 */}
+            <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                className="p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#fbbf24]/40 transition"
+            >
+                <p className="text-2xl text-slate-200 leading-[2] font-amiri">
+                    {t("afterGuidance.sectionThree")}
+                </p>
+            </motion.div>
+
+            {/* 💥 Card 4 (التحدي - مميز) */}
+            <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
+                className="p-12 rounded-3xl bg-[#7b001c]/20 border border-[#7b001c]/40 shadow-[0_0_40px_rgba(123,0,28,0.5)]"
+            >
+                <p className="text-3xl md:text-4xl text-white font-bold leading-[2] font-amiri">
+                    {t.rich("afterGuidance.sectionFour", {
+                        glow: (w) => (
+                            <span className="text-[#fbbf24] drop-shadow-[0_0_25px_rgba(251,191,36,1)] animate-pulse">
+                                {w}
+                            </span>
+                        )
+                    })}
+                </p>
+            </motion.div>
+
+        </div>
+
+        {/* 🏁 النهاية */}
+        <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="text-2xl md:text-3xl text-[#fbbf24] font-amiri leading-[2] max-w-3xl mx-auto"
+        >
+            {t("afterGuidance.sectionFive")}
+        </motion.p>
+
+    </div>
 </section>
         </motion.main>
     );
