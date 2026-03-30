@@ -2,7 +2,19 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import "./globals.css"; // Make sure your path is correct
+import localFont from 'next/font/local'
 
+
+const Tufuli = localFont({
+  src: '../fonts/tufuli/TufuliArabicDEMO-Regular.otf',
+  display: 'swap',
+})
+
+const Lemon = localFont({
+  src: '../fonts/lemon-brush/LemonBrushArabicPersonalUseOnly-Regular.otf',
+  variable: '--font-lemon', // Define the CSS variable here
+  display: 'swap',
+})
 export default async function RootLayout({
     children,
     params,
@@ -23,7 +35,7 @@ export default async function RootLayout({
 
     return (
         <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-            <body className="min-h-full flex flex-col">
+            <body className="{Tufuli.className} {Lemon.className} min-h-full flex flex-col">
                 {/* 3. Wrap EVERYTHING in the Provider */}
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     {children}
