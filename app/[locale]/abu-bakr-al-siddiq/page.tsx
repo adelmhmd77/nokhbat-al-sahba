@@ -1,5 +1,5 @@
 "use client";
-import Link from 'next/link';
+import Link from 'next/link';npm ru
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
