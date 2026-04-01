@@ -1,5 +1,6 @@
 'use client';
-import { motion } from 'framer-motion'; 
+import { motion, px } from 'framer-motion'; 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 export default function UmarIbnAlKhattab() {
@@ -497,6 +498,67 @@ export default function UmarIbnAlKhattab() {
             {t("afterGuidance.sectionFive")}
         </motion.p>
 
+    </div>
+</section>
+<section className="relative min-h-screen py-32 px-6 overflow-hidden">
+
+    {/* 🏆 Title */}
+    <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="text-5xl md:text-7xl font-bold text-white font-tufuli text-center"
+    >
+        {t("firstBattle.title")}
+    </motion.h2>
+
+    {/* ⚔️ Layout */}
+    <div className="text-center max-w-6xl mx-auto relative z-10 mt-20">
+
+        {/* 📜 النص */}
+        <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="w-full md:w-1/1 p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10"
+        >
+            <p className="text-2xl text-slate-200 leading-[2] font-amiri">
+                {t("firstBattle.sectionOne")}
+            </p>
+        </motion.div>
+    </div>
+
+    {/* ⚔️ Layout */}
+    <div className="flex flex-row flex-wrap justify-center items-center gap-12 mt-20 max-w-full max-h-full relative z-10">
+
+        {/* 🖼️ الصورة */}
+<motion.div 
+    initial={{ opacity: 0, y: 20 }} // ضفنا حركة لفوق مع الـ Opacity
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 1.2, duration: 0.8 }}
+    className=" max-w-[650px] max-h-[500px] mt-20 relative aspect-[16/10] rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(123,0,28,0.3)] border-2 border-[#7b001c]/30"
+>
+    <Image 
+        src="/firstBattle.png" // اتأكد إن الاسم ده صح في فولدر public
+        alt="First Battle"
+        width={8000}
+        height={100}
+        className="object-contain object-center hover:scale-110 transition-transform duration-500" // عشان الصورة تكون مركزة ومغطية بالكامل
+        priority // عشان يحمل الصورة دي بسرعة لأنها في الهيرو
+    />
+</motion.div>
+        {/* 📜 النص */}
+        <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="max-w-[auto] max-h-[100%] md:w-1/2 p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10"
+        >
+            <p className=" text-2xl text-slate-200 leading-[2] font-amiri">
+                {t("firstBattle.sectionOne")}
+            </p>
+        </motion.div>
     </div>
 </section>
         </motion.main>

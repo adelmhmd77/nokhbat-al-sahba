@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --font-tufuli: var(--font-tufuli), sans-serif;
+  --font-lemon: var(--font-lemon), sans-serif;
+}
+
 @layer base {
     /* This handles the global "reset" correctly for Tailwind v4 */
     *, ::after, ::before, ::placeholder {
         border-color: var(--color-gray-200, currentColor);
     }
-}
-
-/* باقي الكود بتاعك يفضل زي ما هو */
-@layer base {
-    /* ... */
 }
