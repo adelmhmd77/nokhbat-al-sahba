@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Variants } from 'framer-motion';
 import { useTranslations } from "next-intl";
 
 export default function UthmanIbnAffan() {
@@ -17,16 +18,15 @@ export default function UthmanIbnAffan() {
       },
     },
   };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1.2, ease: "easeOut" },
-    },
-  };
-
+// بعد التعديل ✅
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.2, ease: "easeOut" },
+  },
+};
   return (
     // changed bg-[#FDFCF0] to bg-[#0a0a0a] (Deep Dark)
     <div className="bg-[#0a0a0a] min-h-screen overflow-hidden text-white">
