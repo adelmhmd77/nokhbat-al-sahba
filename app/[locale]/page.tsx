@@ -251,10 +251,12 @@ export default function Home() {
       <p className="text-2xl text-zinc-300 font-tufuli leading-relaxed mb-8">
         {t('companions.othman.bio')}
       </p>
-
-      <button className="px-8 py-3 border border-amber-500/50 text-amber-500 font-tufuli hover:bg-amber-500 hover:text-black transition-all duration-300 rounded-full">
-        {t('companions.othman.btn')}
-      </button>
+      <Link 
+  href="/uthman-ibn-affan" 
+  className="inline-block px-8 py-3 border border-amber-500/50 text-amber-500 font-tufuli hover:bg-amber-500 hover:text-black transition-all duration-300 rounded-full"
+>
+  {t('companions.othman.btn')}
+</Link>
     </motion.div>
   </div>
 </section>
