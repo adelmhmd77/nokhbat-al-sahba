@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { span } from 'framer-motion/client';
 export default function Home() {
     const t = useTranslations('Index');
   return (
@@ -12,11 +13,14 @@ export default function Home() {
       <section className="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden">
         
         {/* الحاوية اللي فيها الزخرفة والنص */}
-        <div className="relative w-full max-w-5xl aspect-[1/1] flex flex-col items-center justify-center">
+        <div className="relative w-full max-w-3xl aspect-[1/1] flex flex-col items-center justify-center">
           {/* النص الجامد في الفراغ اللي في النص */}
           <div className="relative z-10 flex flex-col items-center justify-center text-center">
             <h1 className=" text-8xl font-bold text-amber-500 mb-8 font-tufuli leading-tight">
-              {t('title')} <br/> 
+              {t.rich("title", {
+                        tag: (w) => <span className='text-[#fbbf24] drop-shadow-[0_0_15px_rgba(251,191,36,0.6)]'>{w}</span>,
+                        s: () => <br/>
+                    })}
             </h1>
             <p className=" text-neutral-400 text-xl max-w-xl font-tufuli leading-relaxed">
               {t('hero_subtitle')}
@@ -263,7 +267,7 @@ export default function Home() {
 
 {/* كارت الصحابي الرابع: علي بن أبي طالب */}
 <section className="relative min-h-screen flex items-center justify-center py-20">
-  <div className="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-16">
+  <div className="container mx-auto px-6 flex  flex-col md:flex-row items-center gap-16">
     
     {/* 1. الجانب النصي - على اليمين */}
     <motion.div 
@@ -375,7 +379,7 @@ export default function Home() {
 
 {/* كارت الصحابي السادس: الزبير بن العوام */}
 <section className="relative min-h-screen flex items-center justify-center py-20">
-  <div className="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-16">
+  <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
     
     {/* 1. الجانب النصي - على اليمين */}
     <motion.div 
@@ -487,7 +491,7 @@ export default function Home() {
 
 {/* كارت الصحابي الثامن: سعد بن أبي وقاص */}
 <section className="relative min-h-screen flex items-center justify-center py-20">
-  <div className="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-16">
+  <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
     
     {/* 1. الجانب النصي - على اليمين */}
     <motion.div 
@@ -599,7 +603,7 @@ export default function Home() {
 
 {/* كارت الصحابي العاشر: أبو عبيدة بن الجراح */}
 <section className="relative min-h-screen flex items-center justify-center py-20">
-  <div className="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-16">
+  <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
     
     {/* 1. الجانب النصي - على اليمين */}
     <motion.div 
