@@ -1123,25 +1123,140 @@ export default function UmarIbnAlKhattab() {
                     })}
                 </p>
             </motion.div>
-
-            {/* الخاتمة النهائية (Credits Style) */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 2, duration: 1.5 }}
-                className="pt-20"
-            >
-                <div className="w-24 h-1 bg-[#fbbf24] mx-auto mb-8 shadow-[0_0_15px_#fbbf24]" />
-                <h3 className="text-4xl md:text-6xl font-tufuli text-white/40 tracking-[15px] uppercase">
-                    تمت
-                </h3>
-            </motion.div>
-
         </div>
     </div>
     {/* تأثير "الرماد" أو الغبار المتطاير في النهاية */}
     <div className="absolute inset-0 pointer-events-none bg-[url('/dust-final.png')] opacity-10" />
 </section>
+<section className="relative min-h-screen py-32 px-6 flex flex-col items-center justify-center overflow-hidden">
+    {/* 🔥 خلفية هادية للختام */}
+    <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-[#050000] opacity-95" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-[#7b001c]/10 to-[#050000]" />
+    </div>
+    {/* 💬 المحتوى */}
+    <div className="relative z-10 max-w-5xl mx-auto text-center space-y-16">
+        {/* 🏁 العنوان */}
+        <motion.h2 
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-6xl text-[#fbbf24] font-bold font-amiri"
+        >
+            {t("finalSection.title")}
+        </motion.h2>
+        {/* 🧠 النص الأول */}
+        <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 1 }}
+            className="text-2xl md:text-4xl text-slate-100 leading-[2] font-amiri"
+        >
+            {t.rich("finalSection.sectionOne", {
+                highlight: (w) => <span className="text-[#fbbf24] font-bold">{w}</span>,
+                gold: (w) => <span className="text-[#d4af37] font-bold">{w}</span>,
+                light: (w) => <span className="text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">{w}</span>,
+                focus: (w) => <span className="text-[#7b001c] font-bold">{w}</span>
+            })}
+        </motion.p>
+        {/* 🧠 النص الثاني */}
+        <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.6, duration: 1 }}
+            className="text-2xl md:text-4xl text-slate-100 leading-[2] font-amiri"
+        >
+            {t.rich("finalSection.sectionTwo", {
+                highlight: (w) => <span className="text-[#fbbf24] font-bold">{w}</span>,
+                gold: (w) => <span className="text-[#d4af37] font-bold">{w}</span>
+            })}
+        </motion.p>
+        {/* 🧠 النص الثالث */}
+        <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.9, duration: 1 }}
+            className="text-2xl md:text-4xl text-slate-100 leading-[2] font-amiri"
+        >
+            {t.rich("finalSection.sectionThree", {
+                highlight: (w) => <span className="text-[#fbbf24] font-bold">{w}</span>,
+                light: (w) => <span className="text-white">{w}</span>,
+                soft: (w) => <span className="text-slate-400 italic">{w}</span>
+            })}
+        </motion.p>
+        {/* 🌟 الجملة الأخيرة (Drop mic 🎤) */}
+        <motion.p 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1.2, duration: 1 }}
+            className="text-3xl md:text-5xl text-[#fbbf24] font-bold font-amiri pt-10 border-t border-[#7b001c]/20"
+        >
+            {t.rich("finalSection.closing", {
+                highlight: (w) => <span className="text-white">{w}</span>,
+                gold: (w) => <span className="text-[#d4af37]">{w}</span>,
+                light: (w) => <span className="text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">{w}</span>
+            })}
+        </motion.p>
+    </div>
+</section>
+      <section className="relative w-full max-w-5xl mx-auto px-6 py-20 z-10 border-t border-white/5 mt-20">
+        <div className="flex flex-col items-center text-center space-y-6">
+          <span className="text-amber-400/60 font-tufuli text-sm tracking-widest uppercase">
+            الصحابي الثالث
+          </span>
+          <Link href="/uthman-ibn-affan" className="group relative">
+            {/* توهج خلف الزرار */}
+            <div className="absolute inset-0 bg-amber-500/20 rounded-full blur-xl group-hover:bg-amber-500/40 transition-all duration-500" />
+            
+            <h2 className="relative text-3xl md:text-5xl font-bold font-tufuli text-white group-hover:text-amber-400 transition-colors duration-500 flex items-center gap-4">
+              <span>عثمان بن عفان</span>
+              <svg 
+                className="w-8 h-8 md:w-10 md:h-10 transform group-hover:translate-x-[-10px] transition-transform duration-500" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </h2>
+          </Link>
+          <p className="text-blue-100/50 font-tufuli text-sm mt-2">
+            انتقل لقراءة قصة حياء الأمة وذو النورين
+          </p>
+        </div>
+      </section>
+{/* الـ Footer */}
+<footer className="relative bg-black border-t border-amber-500/20 py-12">
+  <div className="container mx-auto px-6">
+    <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+      
+      {/* اللوجو أو اسم المشروع */}
+      <div className="text-right">
+        <h3 className="text-2xl font-bold text-amber-500 font-tufuli tracking-wider">نُخبةُ الصَّحابة</h3>
+        <p className="text-zinc-500 font-tufuli mt-2 italic">رضي الله عنهم وأرضاهم</p>
+      </div>
+
+      {/* حقوق الملكية وأصحاب الموقع */}
+      <div className="text-center md:text-right border-r-0 md:border-r border-amber-500/30 pr-0 md:pr-8">
+        <p className="text-zinc-400 font-tufuli text-lg">صُنع بحب وإخلاص بواسطة:</p>
+        <div className="flex gap-4 mt-2 justify-center md:justify-end">
+          <span className="text-white font-bold font-tufuli hover:text-amber-500 transition-colors cursor-default">حازم النمر</span>
+          <span className="text-amber-500 opacity-50">|</span>
+          <span className="text-white font-bold font-tufuli hover:text-amber-500 transition-colors cursor-default">عادل محمد</span>
+        </div>
+      </div>
+
+    </div>
+
+    {/* السطر الأخير */}
+    <div className="mt-12 pt-8 border-t border-zinc-900 text-center">
+      <p className="text-zinc-600 text-sm font-sans tracking-widest uppercase">
+        &copy; {new Date().getFullYear()} Nokhbat Al-Sahaba. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
     </motion.main>
     );
 }
