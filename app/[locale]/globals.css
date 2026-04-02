@@ -11,3 +11,8 @@
         border-color: var(--color-gray-200, currentColor);
     }
 }
+@layer utilities {
+  .bg-radial-gradient {
+    background: radial-gradient(circle, var(--tw-gradient-from) 0%, var(--tw-gradient-via) 50%, var(--tw-gradient-to) 100%);
+  }
+}

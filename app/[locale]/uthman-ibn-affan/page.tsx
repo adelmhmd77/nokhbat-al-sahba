@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Variants } from 'framer-motion';
+import { Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 export default function UthmanIbnAffan() {
@@ -18,17 +18,17 @@ export default function UthmanIbnAffan() {
       },
     },
   };
-// بعد التعديل ✅
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 1.2, ease: "easeOut" },
-  },
-};
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1.2, ease: "easeOut" },
+    },
+  };
+
   return (
-    // changed bg-[#FDFCF0] to bg-[#0a0a0a] (Deep Dark)
     <div className="bg-[#0a0a0a] min-h-screen overflow-hidden text-white">
       {/* Hero Section */}
       <motion.div
@@ -37,7 +37,6 @@ const itemVariants: Variants = {
         transition={{ duration: 8, ease: "easeOut" }}
         className="relative bg-[url('/uthman-hero.png')] bg-cover bg-center h-screen w-full"
       >
-        {/* Darker Gradient Overlay for better contrast */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#0a0a0a] flex flex-col justify-center items-center">
           <motion.div
             variants={containerVariants}
@@ -102,26 +101,10 @@ const itemVariants: Variants = {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card Style: Dark Glassmorphism */}
           {[
-            {
-              key: "fullLineage",
-              detail: "lineageDetail",
-              delay: 0.1,
-              darkTitle: false,
-            },
-            {
-              key: "nicknameTitle",
-              detail: "nicknameDetail",
-              delay: 0.3,
-              darkTitle: true,
-            },
-            {
-              key: "birthTitle",
-              detail: "birthDetail",
-              delay: 0.5,
-              darkTitle: false,
-            },
+            { key: "fullLineage", detail: "lineageDetail", delay: 0.1, darkTitle: false },
+            { key: "nicknameTitle", detail: "nicknameDetail", delay: 0.3, darkTitle: true },
+            { key: "birthTitle", detail: "birthDetail", delay: 0.5, darkTitle: false },
           ].map((card, index) => (
             <motion.article
               key={index}
@@ -135,9 +118,7 @@ const itemVariants: Variants = {
               transition={{ delay: card.delay, duration: 0.6 }}
               className="p-8 bg-white/5 backdrop-blur-md rounded-2xl border-l-4 border-[#D4AF37]/50 shadow-xl transition-all duration-300 group cursor-default"
             >
-              <h3
-                className={`font-bold text-2xl mb-4 transition-colors ${card.darkTitle ? "text-white group-hover:text-[#D4AF37]" : "text-[#D4AF37]"}`}
-              >
+              <h3 className={`font-bold text-2xl mb-4 transition-colors ${card.darkTitle ? "text-white group-hover:text-[#D4AF37]" : "text-[#D4AF37]"}`}>
                 {t(`lineageSection.${card.key}`)}
               </h3>
               <p className="text-xl leading-[1.8] text-gray-400 group-hover:text-gray-200 transition-colors italic">
@@ -148,8 +129,8 @@ const itemVariants: Variants = {
         </div>
       </motion.section>
 
+      {/* Islam And Marriage Section (Timeline) */}
       <section className="w-[90%] lg:w-[70%] m-auto my-[100px] relative px-4">
-        {/* Section Header */}
         <motion.h2
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -159,7 +140,6 @@ const itemVariants: Variants = {
           {t("islamAndMarriage.title")}
         </motion.h2>
 
-        {/* Vertical Glowing Line */}
         <div className="absolute right-[31px] md:right-1/2 top-[120px] bottom-0 w-[2px] bg-gradient-to-b from-[#D4AF37] via-[#D4AF37]/50 to-transparent hidden md:block" />
 
         <div className="space-y-12">
@@ -170,11 +150,8 @@ const itemVariants: Variants = {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className={`flex flex-col md:flex-row items-center gap-8 relative ${
-                step % 2 === 0 ? "md:flex-row-reverse" : ""
-              }`}
+              className={`flex flex-col md:flex-row items-center gap-8 relative ${step % 2 === 0 ? "md:flex-row-reverse" : ""}`}
             >
-              {/* The Content Card */}
               <div className="flex-1 w-full">
                 <motion.div
                   whileHover={{ scale: 1.02 }}
@@ -189,25 +166,24 @@ const itemVariants: Variants = {
                 </motion.div>
               </div>
 
-              {/* The Glowing Number Circle */}
+              {/* Step Circle - Removed Bold/Special Fonts */}
               <div className="relative z-10 flex items-center justify-center">
                 <motion.div
                   whileInView={{ scale: [0, 1.2, 1] }}
-                  className="w-16 h-16 rounded-full bg-[#0a0a0a] border-2 border-[#D4AF37] flex items-center justify-center text-[#D4AF37] font-bold text-2xl shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+                  className="w-16 h-16 rounded-full bg-[#0a0a0a] border-2 border-[#D4AF37] flex items-center justify-center text-[#D4AF37] text-2xl shadow-[0_0_15px_rgba(212,175,55,0.4)] font-sans"
                 >
                   {step}
                 </motion.div>
               </div>
 
-              {/* Spacer for Desktop Layout Symmetry */}
               <div className="flex-1 hidden md:block" />
             </motion.div>
           ))}
         </div>
       </section>
 
+      {/* Grid Section */}
       <section className="w-[95%] lg:w-[90%] m-auto my-[120px] px-4">
-        {/* Header Section */}
         <div className="text-center mb-20">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -224,7 +200,6 @@ const itemVariants: Variants = {
           />
         </div>
 
-        {/* 9 Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
             <motion.article
@@ -240,42 +215,111 @@ const itemVariants: Variants = {
               }}
               className="relative p-10 bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-[40px] transition-all duration-500 group flex flex-col min-h-[350px]"
             >
-              {/* Glow behind the badge */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#D4AF37]/10 blur-[50px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
-              {/* Badge / Number */}
+              {/* Card Badge - Removed Bold */}
               <div className="w-16 h-16 rounded-2xl border border-[#D4AF37]/30 bg-[#0a0a0a] flex items-center justify-center mb-8 relative overflow-hidden group-hover:border-[#D4AF37] transition-colors">
-                <span className="text-[#D4AF37] font-bold text-2xl relative z-10">
+                <span className="text-[#D4AF37] text-2xl relative z-10 font-sans">
                   {item}
                 </span>
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{
-                    duration: 10,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
+                  transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
                   className="absolute inset-0 opacity-10 bg-[radial-gradient(circle,white_1px,transparent_1px)] bg-[size:10px_10px]"
                 />
               </div>
 
-              {/* Title */}
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 group-hover:text-[#D4AF37] transition-colors duration-300 leading-tight">
                 {t(`paradiseSection.card${item}_title`)}
               </h3>
 
-              {/* Description - Expanded for more depth */}
               <p className="text-lg lg:text-xl leading-[1.8] text-gray-400 font-light group-hover:text-gray-200 transition-colors duration-300 italic">
                 {t(`paradiseSection.card${item}_desc`)}
               </p>
 
-              {/* Decorative Bottom Indicator */}
               <div className="mt-auto pt-8">
                 <div className="w-12 h-[2px] bg-white/10 group-hover:w-full group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-transparent transition-all duration-700 rounded-full" />
               </div>
             </motion.article>
           ))}
         </div>
+      </section>
+
+      {/* Video Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="w-[90%] lg:w-[80%] m-auto my-[120px] px-4"
+      >
+        <motion.div
+          whileHover={{ scale: 1.01 }}
+          className="relative group p-1 md:p-2 rounded-[32px] md:rounded-[45px] bg-gradient-to-b from-[#D4AF37]/30 to-transparent shadow-2xl"
+        >
+          <div className="relative aspect-video w-full overflow-hidden rounded-[28px] md:rounded-[40px] bg-[#0a0a0a] border border-white/10">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src={t("video")}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="absolute -inset-1 bg-[#D4AF37]/5 blur-2xl rounded-[50px] -z-10 group-hover:bg-[#D4AF37]/10 transition-colors duration-500" />
+        </motion.div>
+      </motion.section>
+
+      {/* Tajer Al-Rahman Big Section */}
+      <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/uthman-sadaka.png"
+            alt="Tajer Al-Rahman"
+            fill
+            className="object-cover object-center scale-105"
+            priority
+          />
+          <div className="absolute inset-0 bg-radial-gradient from-black/50 via-black/60 to-[#0a0a0a] z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/70 z-10" />
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="relative z-20 container mx-auto px-6 text-center max-w-5xl"
+        >
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "fit-content" }}
+            className="mx-auto overflow-hidden whitespace-nowrap border-b border-[#D4AF37]/50 mb-6"
+          >
+            <span className="text-[#D4AF37] text-sm md:text-lg tracking-[0.3em] font-medium uppercase px-4 pb-2 block">
+              {t("tajerAlRahman.label")}
+            </span>
+          </motion.div>
+
+          <h2 className="text-5xl md:text-8xl font-extrabold text-white mb-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]">
+            {t("tajerAlRahman.title")}
+          </h2>
+
+          <p className="text-2xl md:text-4xl text-gray-100 leading-[2.2] md:leading-[2.4] font-light max-w-4xl mx-auto mb-16 drop-shadow-md italic">
+            {t("tajerAlRahman.description")}
+          </p>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="inline-block bg-black/40 backdrop-blur-md px-12 py-8 rounded-full border border-[#D4AF37]/30 shadow-[0_0_30px_rgba(212,175,55,0.15)]"
+          >
+            <span className="text-[#D4AF37] text-3xl md:text-5xl font-serif">
+              {t("tajerAlRahman.callout")}
+            </span>
+          </motion.div>
+        </motion.div>
       </section>
     </div>
   );
