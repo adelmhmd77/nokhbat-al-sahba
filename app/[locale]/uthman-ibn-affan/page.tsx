@@ -4,7 +4,24 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
-
+import {
+  Sword,
+  Shield,
+  Ship,
+  Flag,
+  Trophy,
+  Gavel,
+  Users,
+  BookOpen,
+  Coins,
+  Map,
+  Home,
+  Droplets,
+  Heart,
+  Scale,
+  ChevronRight,
+  ArrowRightCircle,
+} from "lucide-react";
 export default function UthmanIbnAffan() {
   const t = useTranslations("uthmanBinAffan");
 
@@ -35,7 +52,7 @@ export default function UthmanIbnAffan() {
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
         transition={{ duration: 8, ease: "easeOut" }}
-        className="relative bg-[url('/uthman-hero.png')] bg-cover bg-center h-screen w-full"
+        className="relative bg-[url('/uthman/uthman-hero.png')] bg-cover bg-center h-screen w-full"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#0a0a0a] flex flex-col justify-center items-center">
           <motion.div
@@ -102,9 +119,24 @@ export default function UthmanIbnAffan() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { key: "fullLineage", detail: "lineageDetail", delay: 0.1, darkTitle: false },
-            { key: "nicknameTitle", detail: "nicknameDetail", delay: 0.3, darkTitle: true },
-            { key: "birthTitle", detail: "birthDetail", delay: 0.5, darkTitle: false },
+            {
+              key: "fullLineage",
+              detail: "lineageDetail",
+              delay: 0.1,
+              darkTitle: false,
+            },
+            {
+              key: "nicknameTitle",
+              detail: "nicknameDetail",
+              delay: 0.3,
+              darkTitle: true,
+            },
+            {
+              key: "birthTitle",
+              detail: "birthDetail",
+              delay: 0.5,
+              darkTitle: false,
+            },
           ].map((card, index) => (
             <motion.article
               key={index}
@@ -118,7 +150,9 @@ export default function UthmanIbnAffan() {
               transition={{ delay: card.delay, duration: 0.6 }}
               className="p-8 bg-white/5 backdrop-blur-md rounded-2xl border-l-4 border-[#D4AF37]/50 shadow-xl transition-all duration-300 group cursor-default"
             >
-              <h3 className={`font-bold text-2xl mb-4 transition-colors ${card.darkTitle ? "text-white group-hover:text-[#D4AF37]" : "text-[#D4AF37]"}`}>
+              <h3
+                className={`font-bold text-2xl mb-4 transition-colors ${card.darkTitle ? "text-white group-hover:text-[#D4AF37]" : "text-[#D4AF37]"}`}
+              >
                 {t(`lineageSection.${card.key}`)}
               </h3>
               <p className="text-xl leading-[1.8] text-gray-400 group-hover:text-gray-200 transition-colors italic">
@@ -224,7 +258,11 @@ export default function UthmanIbnAffan() {
                 </span>
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 10,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                   className="absolute inset-0 opacity-10 bg-[radial-gradient(circle,white_1px,transparent_1px)] bg-[size:10px_10px]"
                 />
               </div>
@@ -276,7 +314,7 @@ export default function UthmanIbnAffan() {
       <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/uthman-sadaka.png"
+            src="/uthman/uthman-sadaka.png"
             alt="Tajer Al-Rahman"
             fill
             className="object-cover object-center scale-105"
@@ -321,6 +359,690 @@ export default function UthmanIbnAffan() {
           </motion.div>
         </motion.div>
       </section>
+
+      <section className="w-full lg:w-[90%] m-auto my-[150px] px-6">
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+          {/* 1. The Image Side */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="relative w-full lg:w-1/2 aspect-[3/4] md:aspect-[4/5] rounded-[40px] overflow-hidden border border-white/10 shadow-2xl group"
+          >
+            <figure className="w-full h-full relative">
+              <Image
+                src="/uthman/uthman-mushaf.jpg"
+                alt="Uthman bin Affan Quran Collection"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+
+              {/* Elegant Figcaption Overlay */}
+              <figcaption className="absolute bottom-6 right-6 z-20 text-white/60 text-sm md:text-base font-light tracking-wide bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/5 opacity-100 group-hover:opacity-100 transition-opacity duration-500">
+                {t("quranCollection.figcaption")}
+              </figcaption>
+
+              {/* Subtle Inner Glow */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-transparent z-10" />
+            </figure>
+          </motion.div>
+
+          {/* 2. The Text Side */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="w-full lg:w-1/2 text-right"
+          >
+            <span className="text-[#D4AF37] font-sans tracking-[0.2em] text-sm md:text-base mb-4 block uppercase opacity-80">
+              {t("quranCollection.label")}
+            </span>
+
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+              {t("quranCollection.title")}
+            </h2>
+
+            <p className="text-xl md:text-2xl text-gray-300 leading-[2.2] font-light mb-12 italic">
+              {t("quranCollection.description")}
+            </p>
+
+            <motion.div
+              whileHover={{ x: -10 }}
+              className="border-r-4 border-[#D4AF37] pr-6 py-2"
+            >
+              <span className="text-[#D4AF37] text-2xl md:text-3xl font-serif">
+                {t("quranCollection.callout")}
+              </span>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="relative w-full min-h-[60vh] flex flex-col items-center justify-center overflow-hidden py-20 px-6">
+        {/* الخلفية - الصورة التي قمت بتوليدها */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/uthman/uthman-achivments.png"
+            alt="Uthman Achievements Landscape"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          {/* طبقات التدرج اللوني لضمان وضوح النص */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-black/20 to-[#0a0a0a] z-10" />
+          <div className="absolute inset-0 bg-black/40 z-10" />
+        </div>
+
+        {/* المحتوى النصي */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative z-20 text-center max-w-4xl"
+        >
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "80px" }}
+            className="h-1 bg-[#D4AF37] mx-auto mb-8 rounded-full shadow-[0_0_15px_#D4AF37]"
+          />
+
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 drop-shadow-2xl">
+            {t("sec-title")}
+          </h2>
+
+          <p className="text-xl md:text-2xl text-gray-200 leading-[2] font-light italic drop-shadow-md">
+            {t("sec-dec")}
+          </p>
+        </motion.div>
+      </section>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="flex flex-col items-center mb-24 text-center px-4"
+      >
+        {/* الخط العلوي المزخرف */}
+        <div className="flex items-center gap-4 mb-6 mt-6 w-full max-w-2xl justify-center">
+          <div className="h-[1px] flex-grow bg-gradient-to-r from-transparent to-[#D4AF37] opacity-40" />
+          <span className="text-[#D4AF37] tracking-[0.4em] text-xs md:text-sm uppercase font-medium">
+            {t("wars.secc-des")}
+          </span>
+          <div className="h-[1px] flex-grow bg-gradient-to-l from-transparent to-[#D4AF37] opacity-40" />
+        </div>
+
+        {/* العنوان الرئيسي */}
+        <h2 className="text-5xl md:text-7xl font-bold text-white relative group">
+          <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-gray-500">
+            {t("wars.secc-title")}
+          </span>
+
+          {/* توهج خلفي خفيف (Glow) */}
+          <div className="absolute -inset-x-10 top-1/2 -translate-y-1/2 h-20 bg-[#D4AF37]/5 blur-[60px] rounded-full -z-10" />
+        </h2>
+
+        {/* الزخرفة السفلية */}
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "180px" }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className="h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mt-8 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.5)]"
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="w-full max-w-[95rem] mx-auto my-32 px-6 lg:px-20"
+        dir="rtl"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          {/* 1. جهة الصورة - تأخذ مساحة أقل (4 أعمدة من 12) لتركيز الانتباه على النص */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="lg:col-span-5 relative group"
+          >
+            <div className="relative aspect-video lg:aspect-[3/5] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.5)]">
+              <Image
+                src="/uthman/mashriq-a-fares.webp"
+                alt={t("wars.list.0.name")}
+                fill
+                className="object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
+            </div>
+
+            {/* تسمية توضيحية للصورة */}
+            <figcaption className="absolute bottom-6 right-8 z-20 text-white/70 text-xs font-light tracking-widest bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/5">
+              تصور فني للمعارك التاريخية
+            </figcaption>
+          </motion.div>
+
+          {/* 2. جهة النص - المساحة الأكبر (7 أعمدة من 12) مع تحسين العناوين */}
+          <div className="lg:col-span-7 text-right">
+            {/* التاج العلوي */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-[2px] w-12 bg-[#D4AF37]" />
+              <span className="text-[#D4AF37] text-sm md:text-base tracking-[0.4em] font-bold uppercase">
+                فتوحات ذي النورين
+              </span>
+            </div>
+
+            {/* العنوان الرئيسي الضخم */}
+            <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-10 leading-[1.1] drop-shadow-2xl">
+              {t("wars.list.0.name")}
+            </h2>
+
+            {/* القصة والمقدمة بتباعد أسطر مريح */}
+            <div className="relative mb-16">
+              <p className="text-2xl md:text-3xl text-gray-300 leading-[1.8] font-light italic border-r-4 border-[#D4AF37]/40 pr-8">
+                {t("wars.list.0.content.introduction")}
+              </p>
+            </div>
+
+            {/* تفاصيل المعركة - تكبير العناوين الفرعية (Sub-titles) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-12 border-y border-white/10">
+              {/* الدوافع */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Sword className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">
+                    لماذا بدأت؟
+                  </h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.0.content.causes")}
+                </p>
+              </div>
+
+              {/* الأحداث */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Shield className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">
+                    ماذا حدث؟
+                  </h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.0.content.events")}
+                </p>
+              </div>
+            </div>
+
+            {/* القادة والنتيجة في شريط جانبي */}
+            <div className="mt-12 flex flex-wrap items-center gap-10">
+              <div className="flex items-center gap-5">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center border border-white/10 shadow-inner">
+                  <Users className="text-[#D4AF37] w-7 h-7" />
+                </div>
+                <p className="text-sm text-gray-400 leading-relaxed">
+                  <strong className="text-white block text-base mb-1">
+                    قيادة الجيش:
+                  </strong>
+                  {t("wars.list.0.content.leaders.0")} &{" "}
+                  {t("wars.list.0.content.leaders.1")}
+                </p>
+              </div>
+
+              <div className="flex-grow md:flex-grow-0 py-4 px-8 bg-gradient-to-l from-[#D4AF37]/20 to-transparent rounded-2xl border-r-4 border-[#D4AF37] shadow-[0_0_20px_rgba(212,175,55,0.1)]">
+                <span className="text-[#D4AF37] text-xs font-bold block mb-1 uppercase tracking-widest">
+                  خلاصة النصر
+                </span>
+                <p className="text-white font-serif text-2xl italic tracking-wide">
+                  {t("wars.list.0.content.results")}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+
+
+      {/* العنصر الثاني - Index 1 (Zig-Zag: النص يسار والصورة يمين) */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="w-full max-w-[95rem] mx-auto my-32 px-6 lg:px-20"
+        dir="rtl"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          {/* 1. جهة النص - الآن تأخذ الترتيب الأول في الموبايل والثاني في الشاشات الكبيرة */}
+          <div className="lg:col-span-7 text-right lg:order-1">
+            {/* التاج العلوي */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-[2px] w-12 bg-[#D4AF37]" />
+              <span className="text-[#D4AF37] text-sm md:text-base tracking-[0.4em] font-bold uppercase">
+                فتوحات ذي النورين
+              </span>
+            </div>
+
+            {/* العنوان الرئيسي الضخم */}
+            <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-10 leading-[1.1] drop-shadow-2xl">
+              {t("wars.list.1.name")}
+            </h2>
+
+            {/* القصة والمقدمة */}
+            <div className="relative mb-16">
+              <p className="text-2xl md:text-3xl text-gray-300 leading-[1.8] font-light italic border-r-4 border-[#D4AF37]/40 pr-8">
+                {t("wars.list.1.content.introduction")}
+              </p>
+            </div>
+
+            {/* تفاصيل المعركة */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-12 border-y border-white/10">
+              {/* الدوافع */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Sword className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">لماذا بدأت؟</h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.1.content.causes")}
+                </p>
+              </div>
+
+              {/* الأحداث */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Shield className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">ماذا حدث؟</h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.1.content.events")}
+                </p>
+              </div>
+            </div>
+
+            {/* القادة والنتيجة */}
+            <div className="mt-12 flex flex-wrap items-center gap-10">
+              <div className="flex items-center gap-5">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center border border-white/10 shadow-inner">
+                  <Users className="text-[#D4AF37] w-7 h-7" />
+                </div>
+                <p className="text-sm text-gray-400 leading-relaxed text-right">
+                  <strong className="text-white block text-base mb-1">قيادة الجيش:</strong>
+                  {t("wars.list.1.content.leaders.0")} & {t("wars.list.1.content.leaders.1")}
+                </p>
+              </div>
+
+              <div className="flex-grow md:flex-grow-0 py-4 px-8 bg-gradient-to-l from-[#D4AF37]/20 to-transparent rounded-2xl border-r-4 border-[#D4AF37] shadow-[0_0_20px_rgba(212,175,55,0.1)] text-right">
+                <span className="text-[#D4AF37] text-xs font-bold block mb-1 uppercase tracking-widest">خلاصة النصر</span>
+                <p className="text-white font-serif text-2xl italic tracking-wide">
+                  {t("wars.list.1.content.results")}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 2. جهة الصورة - الآن تأخذ الترتيب الثاني في الموبايل والأول في الشاشات الكبيرة */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="lg:col-span-5 relative group lg:order-2"
+          >
+            <div className="relative aspect-video lg:aspect-[3/5] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.5)]">
+              <Image
+                src="/uthman/armenia.png" // تأكد من تغيير مسار الصورة للصورة الثانية
+                alt={t("wars.list.1.name")}
+                fill
+                className="object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
+            </div>
+            
+            <figcaption className="absolute bottom-6 left-8 z-20 text-white/70 text-xs font-light tracking-widest bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/5">
+              فتوحات إفريقية والمغرب
+            </figcaption>
+          </motion.div>
+
+        </div>
+      </motion.div>
+
+
+
+      {/* العنصر الثالث - Index 2 (Zig-Zag: الصورة يمين والنص يسار) */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="w-full max-w-[95rem] mx-auto my-32 px-6 lg:px-20"
+        dir="rtl"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          {/* 1. جهة الصورة - (العودة لليمين lg:col-span-5) */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="lg:col-span-5 relative group"
+          >
+            <div className="relative aspect-video lg:aspect-[3/5] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.5)]">
+              <Image
+                src="/uthman/tunis.png" // تأكد من تسمية الصورة المرفوعة بهذا الاسم
+                alt={t("wars.list.2.name")}
+                fill
+                className="object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
+            </div>
+            
+            <figcaption className="absolute bottom-6 right-8 z-20 text-white/70 text-xs font-light tracking-widest bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/5">
+              جبال القوقاز وأسوار أرمينيا
+            </figcaption>
+          </motion.div>
+
+          {/* 2. جهة النص - (المساحة الأكبر lg:col-span-7) */}
+          <div className="lg:col-span-7 text-right">
+            {/* التاج العلوي */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-[2px] w-12 bg-[#D4AF37]" />
+              <span className="text-[#D4AF37] text-sm md:text-base tracking-[0.4em] font-bold uppercase">
+                فتوحات ذي النورين
+              </span>
+            </div>
+
+            {/* العنوان الرئيسي الضخم */}
+            <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-10 leading-[1.1] drop-shadow-2xl">
+              {t("wars.list.2.name")}
+            </h2>
+
+            {/* القصة والمقدمة */}
+            <div className="relative mb-16">
+              <p className="text-2xl md:text-3xl text-gray-300 leading-[1.8] font-light italic border-r-4 border-[#D4AF37]/40 pr-8">
+                {t("wars.list.2.content.introduction")}
+              </p>
+            </div>
+
+            {/* تفاصيل المعركة - العناوين الفرعية المكبرة */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-12 border-y border-white/10">
+              {/* الدوافع */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Sword className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">لماذا بدأت؟</h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.2.content.causes")}
+                </p>
+              </div>
+
+              {/* الأحداث */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Shield className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">ماذا حدث؟</h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.2.content.events")}
+                </p>
+              </div>
+            </div>
+
+            {/* القادة والنتيجة */}
+            <div className="mt-12 flex flex-wrap items-center gap-10">
+              <div className="flex items-center gap-5">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center border border-white/10 shadow-inner">
+                  <Users className="text-[#D4AF37] w-7 h-7" />
+                </div>
+                <p className="text-sm text-gray-400 leading-relaxed text-right">
+                  <strong className="text-white block text-base mb-1">قيادة الجيش:</strong>
+                  {t("wars.list.2.content.leaders.0")} & {t("wars.list.2.content.leaders.1")}
+                </p>
+              </div>
+
+              <div className="flex-grow md:flex-grow-0 py-4 px-8 bg-gradient-to-l from-[#D4AF37]/20 to-transparent rounded-2xl border-r-4 border-[#D4AF37] shadow-[0_0_20px_rgba(212,175,55,0.1)] text-right">
+                <span className="text-[#D4AF37] text-xs font-bold block mb-1 uppercase tracking-widest">خلاصة النصر</span>
+                <p className="text-white font-serif text-2xl italic tracking-wide">
+                  {t("wars.list.2.content.results")}
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </motion.div>
+
+
+
+
+
+
+
+
+
+
+      {/* العنصر الرابع - Index 3 (Zig-Zag: النص يمين والصورة يسار) */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="w-full max-w-[95rem] mx-auto my-32 px-6 lg:px-20"
+        dir="rtl"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          {/* 1. جهة النص - (تأخذ الترتيب الأول في الشاشات الكبيرة lg:order-1) */}
+          <div className="lg:col-span-7 text-right lg:order-1">
+            {/* التاج العلوي */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-[2px] w-12 bg-[#D4AF37]" />
+              <span className="text-[#D4AF37] text-sm md:text-base tracking-[0.4em] font-bold uppercase">
+                فتوحات ذي النورين
+              </span>
+            </div>
+
+            {/* العنوان الرئيسي الضخم */}
+            <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-10 leading-[1.1] drop-shadow-2xl">
+              {t("wars.list.3.name")}
+            </h2>
+
+            {/* القصة والمقدمة */}
+            <div className="relative mb-16">
+              <p className="text-2xl md:text-3xl text-gray-300 leading-[1.8] font-light italic border-r-4 border-[#D4AF37]/40 pr-8">
+                {t("wars.list.3.content.introduction")}
+              </p>
+            </div>
+
+            {/* تفاصيل المعركة - العناوين الفرعية المكبرة */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-12 border-y border-white/10">
+              {/* الدوافع */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Sword className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">لماذا بدأت؟</h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.3.content.causes")}
+                </p>
+              </div>
+
+              {/* الأحداث */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Shield className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">ماذا حدث؟</h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.3.content.events")}
+                </p>
+              </div>
+            </div>
+
+            {/* القادة والنتيجة */}
+            <div className="mt-12 flex flex-wrap items-center gap-10">
+              <div className="flex items-center gap-5">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center border border-white/10 shadow-inner">
+                  <Users className="text-[#D4AF37] w-7 h-7" />
+                </div>
+                <p className="text-sm text-gray-400 leading-relaxed text-right">
+                  <strong className="text-white block text-base mb-1">قيادة الجيش:</strong>
+                  {t("wars.list.3.content.leaders.0")} & {t("wars.list.3.content.leaders.1")}
+                </p>
+              </div>
+
+              <div className="flex-grow md:flex-grow-0 py-4 px-8 bg-gradient-to-l from-[#D4AF37]/20 to-transparent rounded-2xl border-r-4 border-[#D4AF37] shadow-[0_0_20px_rgba(212,175,55,0.1)] text-right">
+                <span className="text-[#D4AF37] text-xs font-bold block mb-1 uppercase tracking-widest">خلاصة النصر</span>
+                <p className="text-white font-serif text-2xl italic tracking-wide">
+                  {t("wars.list.3.content.results")}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 2. جهة الصورة - (تأخذ الترتيب الثاني lg:order-2 لتظهر على اليسار) */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="lg:col-span-5 relative group lg:order-2"
+          >
+            <div className="relative aspect-video lg:aspect-[3/5] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.5)]">
+              <Image
+                src="/uthman/sea-war.png" // تأكد من استخدام هذا الاسم للصورة المولدة
+                alt={t("wars.list.3.name")}
+                fill
+                className="object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
+            </div>
+            
+            <figcaption className="absolute bottom-6 left-8 z-20 text-white/70 text-xs font-light tracking-widest bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/5">
+              أسوار سبيطلة وفتوح إفريقية
+            </figcaption>
+          </motion.div>
+
+        </div>
+      </motion.div>
+
+
+
+
+
+
+      {/* العنصر الخامس - Index 4 (Zig-Zag: الصورة يمين والنص يسار) */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="w-full max-w-[95rem] mx-auto my-32 px-6 lg:px-20"
+        dir="rtl"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          {/* 1. جهة الصورة - (العودة لليمين lg:col-span-5) */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="lg:col-span-5 relative group"
+          >
+            <div className="relative aspect-video lg:aspect-[3/5] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.5)]">
+              <Image
+                src="/uthman/sham.png" // تأكد من حفظ صورة السفن بهذا الاسم
+                alt={t("wars.list.4.name")}
+                fill
+                className="object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
+            </div>
+            
+            <figcaption className="absolute bottom-6 right-8 z-20 text-white/70 text-xs font-light tracking-widest bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/5">
+              أول أسطول بحري في تاريخ الإسلام
+            </figcaption>
+          </motion.div>
+
+          {/* 2. جهة النص - (المساحة الأكبر lg:col-span-7) */}
+          <div className="lg:col-span-7 text-right">
+            {/* التاج العلوي */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-[2px] w-12 bg-[#D4AF37]" />
+              <span className="text-[#D4AF37] text-sm md:text-base tracking-[0.4em] font-bold uppercase">
+                السيادة البحرية
+              </span>
+            </div>
+
+            {/* العنوان الرئيسي الضخم */}
+            <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-10 leading-[1.1] drop-shadow-2xl">
+              {t("wars.list.4.name")}
+            </h2>
+
+            {/* القصة والمقدمة */}
+            <div className="relative mb-16">
+              <p className="text-2xl md:text-3xl text-gray-300 leading-[1.8] font-light italic border-r-4 border-[#D4AF37]/40 pr-8">
+                {t("wars.list.4.content.introduction")}
+              </p>
+            </div>
+
+            {/* تفاصيل المعركة - تم تغيير الأيقونات لتناسب البحرية */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-12 border-y border-white/10">
+              {/* الدوافع */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Ship className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">لماذا بدأت؟</h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.4.content.causes")}
+                </p>
+              </div>
+
+              {/* الأحداث */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-[#D4AF37]/10 rounded-2xl border border-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                    <Sword className="text-[#D4AF37] w-8 h-8" />
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white">ماذا حدث؟</h4>
+                </div>
+                <p className="text-xl text-gray-400 leading-relaxed font-light pr-4">
+                  {t("wars.list.4.content.events")}
+                </p>
+              </div>
+            </div>
+
+            {/* القادة والنتيجة */}
+            <div className="mt-12 flex flex-wrap items-center gap-10">
+              <div className="flex items-center gap-5">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center border border-white/10 shadow-inner">
+                  <Users className="text-[#D4AF37] w-7 h-7" />
+                </div>
+                <p className="text-sm text-gray-400 leading-relaxed text-right">
+                  <strong className="text-white block text-base mb-1">قيادة الأسطول:</strong>
+                  {t("wars.list.4.content.leaders.0")}
+                </p>
+              </div>
+
+              <div className="flex-grow md:flex-grow-0 py-4 px-8 bg-gradient-to-l from-[#D4AF37]/20 to-transparent rounded-2xl border-r-4 border-[#D4AF37] shadow-[0_0_20px_rgba(212,175,55,0.1)] text-right">
+                <span className="text-[#D4AF37] text-xs font-bold block mb-1 uppercase tracking-widest">خلاصة النصر</span>
+                <p className="text-white font-serif text-2xl italic tracking-wide">
+                  {t("wars.list.4.content.results")}
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </motion.div>
     </div>
   );
 }
