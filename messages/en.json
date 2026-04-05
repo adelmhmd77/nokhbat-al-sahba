@@ -90,24 +90,20 @@
         "btn": "Biography of the Trustee"
       }
     },
-    "footerout":"Those Are the Ones Whom Allah Has Guided",
-    "footerp":"These are not just names in the pages of history, but beacons that illuminated the path of truth and justice for humanity. Their lives are an endless source of inspiration, and their stories are nourishment for the soul. We invite you to dive into the details of their lives, to draw from their courage, wisdom, and generosity what can light your own path."
+    "footerout": "Those Are the Ones Whom Allah Has Guided",
+    "footerp": "These are not just names in the pages of history, but beacons that illuminated the path of truth and justice for humanity. Their lives are an endless source of inspiration, and their stories are nourishment for the soul. We invite you to dive into the details of their lives, to draw from their courage, wisdom, and generosity what can light your own path."
   },
-  
   "abuBakrAlSiddiq": {
     "hero": {
       "subtitle": "The First Man to Believe",
       "title": "Abu Bakr Al-Siddiq",
       "verse": "The second of two, when they were both in the cave"
     },
-
     "timeline": {
       "label": "A Journey of Truth and Devotion"
     },
-
     "biography": {
       "sectionTitle": "Who Is Al-Siddiq?",
-
       "card1": {
         "title": "Lineage & Birth",
         "imageAlt": "Evocation of a noble childhood",
@@ -117,7 +113,6 @@
           "tribe": "Banu Taym"
         }
       },
-
       "card2": {
         "title": "His Standing Among Quraysh",
         "imageAlt": "Al-Siddiq the merchant",
@@ -126,7 +121,6 @@
           "profession": "cloth merchant"
         }
       },
-
       "card3": {
         "title": "His Appearance & Titles",
         "traits": {
@@ -142,7 +136,6 @@
           }
         }
       },
-
       "sources": {
         "title": "Historical References",
         "intro": "This information is drawn from:",
@@ -165,11 +158,9 @@
         ]
       }
     },
-
     "faith": {
       "sectionTitle": "The Dawn of Faith",
       "sectionSubtitle": "I called no one to Islam but he hesitated… except Abu Bakr",
-
       "card1": {
         "title": "Belief Without Hesitation",
         "body": "Abu Bakr's conversion was no passing event — it was the fruit of years of deep friendship with the Prophet ﷺ. When the revelation descended, the Prophet ﷺ went to him and presented the matter. Without asking for a sign or demanding a miracle, he believed on the spot. The Prophet ﷺ said of him: 'I called no one to Islam but he paused and deliberated — except Abu Bakr. When I told him, he did not waver nor hesitate for a moment.'",
@@ -177,7 +168,6 @@
           "action": "believed on the spot"
         }
       },
-
       "card2": {
         "title": "The Man Who Brought a Nation",
         "body": "Al-Siddiq did not stop at his own faith. He immediately set out to call those he trusted. Through him, Islam reached giants who would later shake the earth — five of the ten promised Paradise: Uthman ibn Affan, al-Zubayr ibn al-Awwam, Abd al-Rahman ibn Awf, Saad ibn Abi Waqqas, and Talha ibn Ubaydullah. Each of them stands in the scale of his good deeds, for he was the key that opened their hearts to the light.",
@@ -192,7 +182,6 @@
           "Talha ibn Ubaydullah"
         ]
       },
-
       "card3": {
         "title": "Spending Without Fear of Poverty",
         "body": "In Mecca, the weak were being tortured for their faith. Al-Siddiq deployed his mightiest weapon: his wealth. He purchased and freed seven souls who were being tormented for the sake of God, foremost among them Bilal ibn Rabah, the caller to prayer of the Messenger ﷺ. His father Abu Quhafa said to him: 'My son, I see you freeing the weak and frail — why not free strong men who could protect you?' Al-Siddiq replied with certainty: 'Father, I only seek what is with God.'",
@@ -202,7 +191,6 @@
         },
         "quote": "Father, I only seek what is with God."
       },
-
       "sources": {
         "title": "Section References",
         "list": [
@@ -224,7 +212,6 @@
         ]
       }
     },
-
     "loyalty": {
       "sectionTitle": "Why Al-Siddiq?",
       "sectionSubtitle": "A Love Story That Came Before the Journey",
@@ -233,7 +220,6 @@
       "reflection": "If I am killed, I am but one man. But if he ﷺ is killed, the entire nation is lost.",
       "closingPoem": "Is it not from love that Al-Siddiq wept? Yes — and from sacrifice that minds were left in awe."
     },
-
     "cave": {
       "sectionTag": "The Moment That Held History's Breath",
       "sectionTitle": "The Second of Two",
@@ -258,7 +244,6 @@
         "prophetsLight": "the light of prophethood"
       }
     },
-
     "medina": {
       "sectionTitle": "The Lights of Medina",
       "sectionSubtitle": "The Beginning of a New Era",
@@ -267,7 +252,6 @@
       "body2": "Medina was no mere stopover — it was a home that Al-Siddiq built with his wealth and effort. He purchased the land for the mosque, and together with the Prophet ﷺ laid the foundations of the new state. He remained the inseparable shadow, the counselor whom no one could surpass in opinion or advice.",
       "tagline": "The Elite of Loyalty"
     },
-
     "foundation": {
       "sectionTag": "The Founding of a Nation",
       "sectionTitle": "The Founder",
@@ -284,7 +268,6 @@
         "The Prophet's chief counselor"
       ]
     },
-
     "steadfastness": {
       "sectionTag": "The Most Difficult Moment",
       "sectionTitle": "The Mountain",
@@ -294,7 +277,6 @@
       "immortalWords": "Whoever worshipped Muhammad — Muhammad has died. Whoever worshipped God — God is Ever-Living and shall never die.",
       "aftermath": "In that moment, he was the pillar that kept the nation from shattering, and restored it to the path of truth with the steadfastness of prophets."
     },
-
     "caliphate": {
       "sectionTitle": "The Caliphate of Al-Siddiq",
       "sectionSubtitle": "The Epic & The Achievement",
@@ -308,7 +290,6 @@
         "quranCompilation": "the compilation of the Holy Quran"
       }
     },
-
     "farewell": {
       "sectionTitle": "The Departure & The Reunion",
       "sectionSubtitle": "In the Company of the Beloved ﷺ",
@@ -319,7 +300,6 @@
       },
       "closingTag": "The Elite of the Companions — Abu Bakr Al-Siddiq"
     },
-
     "images": {
       "symbol": {
         "src": "/abu_bakr_symbol.png",
@@ -359,55 +339,313 @@
       }
     }
   },
-
-  "uthmanBinAffan":{
-    "title": "عُثْمَانُ بْنُ عَفَّانَ",
-    "subtitle": "ذُو النُّورَيْنِ",
-    "description": "ثَالِثُ الْخُلَفَاءِ الرَّاشِدِينَ، وَأَحَدُ الْعَشَرَةِ الْمُبَشَّرِينَ بِالْجَنَّةِ، مَنِ اسْتَحَتْ مِنْهُ مَلَائِكَةُ الرَّحْمَنِ.",
+  "uthmanBinAffan": {
+    "title": "Uthman ibn Affan",
+    "subtitle": "Dhul-Nurayn (The One with Two Lights)",
+    "description": "The third of the Rightly Guided Caliphs, one of the Ten Companions promised Paradise, the man whom the angels of the Most Merciful were shy of.",
     "lineageSection": {
-      "title": "النَّسَبُ وَالْكُنْيَةُ",
-      "fullLineage": "عُثْمَانُ بْنُ عَفَّانَ بْنِ أَبِي الْعَاصِ بْنِ أُمَيَّةَ الْقُرَشِيُّ",
-      "lineageDetail": "يَلْتَقِي نَسَبُهُ مَعَ الرَّسُولِ ﷺ فِي الْجَدِّ الرَّابِعِ (عَبْدِ مَنَافٍ)، وَهُوَ مِنْ بَنِي أُمَيَّةَ، إِحْدَى أَعْرَقِ قَبَائِلِ قُرَيْشٍ.",
-      "nicknameTitle": "كُنْيَتُهُ",
-      "nicknameDetail": "يُكَنَّى بِـ (أَبِي عَبْدِ اللهِ) وَ (أَبِي لَيْلَى)، وَلَقَبُهُ الْأَشْهَرُ (ذُو النُّورَيْنِ) لِزَوَاجِهِ مِنْ رُقَيَّةَ ثُمَّ أُمِّ كُلْثُومٍ بِنْتَيِ النَّبِيِّ ﷺ.",
-      "birthTitle": "الْمَوْلِدُ",
-      "birthDetail": "وُلِدَ فِي مَكَّةَ الْمُكَرَّمَةِ بَعْدَ عَامِ الْفِيلِ بِسِتِّ سِنِينَ تَقْرِيبًا."
+      "title": "Lineage and Kunya",
+      "fullLineage": "Uthman ibn Affan ibn Abi al-As ibn Umayya al-Qurashi",
+      "lineageDetail": "His lineage meets that of the Prophet ﷺ at the fourth grandfather (Abd Manaf). He was from Banu Umayya, one of the most noble tribes of Quraysh.",
+      "nicknameTitle": "His Kunya",
+      "nicknameDetail": "He was known by the kunyah (Abu Abdullah) and (Abu Layla). His most famous title was (Dhul-Nurayn — Bearer of Two Lights) because he married Ruqayyah and then Umm Kulthum, the two daughters of the Prophet ﷺ.",
+      "birthTitle": "Birth",
+      "birthDetail": "He was born in Makkah al-Mukarramah approximately six years after the Year of the Elephant."
     },
-  
     "islamAndMarriage": {
-      "title": "إِسْلَامُهُ وَزَوَاجُهُ",
-      "step1_title": "فَجْرُ الْإِسْلَامِ",
-      "step1_desc": "أَسْلَمَ عُثْمَانُ -رَضِيَ اللهُ عَنْهُ- مُبَكِّرًا فِي بِدَايَةِ الدَّعْوَةِ، حَيْثُ دَعَاهُ أَبُو بَكْرٍ الصِّدِّيقُ إِلَى الْإِسْلَامِ، فَكَانَ مِنَ السَّابِقِينَ الْأَوَّلِينَ الَّذِينَ أَعَزَّ اللهُ بِهِمُ الدِّينَ.",
-      "step2_title": "الزَّوَاجُ مِنْ رُقَيَّةَ (عَلَيْهَا السَّلَامُ)",
-      "step2_desc": "زَوَّجَهُ النَّبِيُّ ﷺ ابْنَتَهُ رُقَيَّةَ، وَهَاجَرَتْ مَعَهُ إِلَى الْحَبَشَةِ ثُمَّ إِلَى الْمَدِينَةِ، وَكَانَا يُلَقَّبَانِ بِـ 'أَحْسَنِ زَوْجَيْنِ رَآهُمَا إِنْسَانٌ'.",
-      "step3_title": "الْوَفَاءُ وَالِابْتِلَاءُ",
-      "step3_desc": "تُوُفِّيَتْ رُقَيَّةُ يَوْمَ نَصْرِ بَدْرٍ، فَحَزِنَ عُثْمَانُ حُزْنًا شَدِيدًا لِانْقِطَاعِ صِهْرِهِ مِنَ النَّبِيِّ ﷺ، فَبَشَّرَهُ الرَّسُولُ بِالْجَبْرِ.",
-      "step4_title": "الزَّوَاجُ مِنْ أُمِّ كُلْثُومٍ وَلَقَبُ ذِي النُّورَيْنِ",
-      "step4_desc": "زَوَّجَهُ النَّبِيُّ ﷺ ابْنَتَهُ الثَّانِيَةَ أُمَّ كُلْثُومٍ، وَبَعْدَ وَفَاتِهَا قَالَ النَّبِيُّ: 'لَوْ كَانَ عِنْدَنَا ثَالِثَةٌ لَزَوَّجْنَاكَ يَا عُثْمَانُ'، وَبِذَلِكَ لُقِّبَ بِـ (ذِي النُّورَيْنِ)."
+      "title": "His Islam and Marriage",
+      "step1_title": "The Dawn of Islam",
+      "step1_desc": "Uthman — may Allah be pleased with him — embraced Islam early at the very beginning of the call, when Abu Bakr al-Siddiq invited him to it. He was among the earliest forerunners through whom Allah honored the religion.",
+      "step2_title": "Marriage to Ruqayyah (peace be upon her)",
+      "step2_desc": "The Prophet ﷺ gave him his daughter Ruqayyah in marriage. She emigrated with him to Abyssinia and then to Madinah. They were known as 'the most beautiful couple any human eye had ever seen.'",
+      "step3_title": "Loyalty and Trial",
+      "step3_desc": "Ruqayyah passed away on the day of the victory of Badr. Uthman grieved deeply, saddened by the severing of his bond with the Prophet ﷺ, but the Messenger comforted him with glad tidings.",
+      "step4_title": "Marriage to Umm Kulthum and the Title Dhul-Nurayn",
+      "step4_desc": "The Prophet ﷺ then gave him his second daughter Umm Kulthum in marriage. After her passing, the Prophet said: 'Had we a third, we would have given her to you in marriage, O Uthman.' Thus he was given the title (Dhul-Nurayn — Bearer of Two Lights)."
     },
-
     "paradiseSection": {
-      "title": "مَقَامُ الْفَضْلِ وَبَشَائِرُ الرِّضْوَانِ",
-      "card1_title": "الْعَشَرَةُ الْمُبَشَّرُونَ",
-      "card1_desc": "أَحَدُ السَّابِقِينَ إِلَى الْإِسْلَامِ الَّذِينَ شَهِدَ لَهُمُ النَّبِيُّ ﷺ بِالْجَنَّةِ فِي مَجْلِسٍ وَاحِدٍ، جَمَعَ بَيْنَ الصِّدِّيقِ وَالْفَارُوقِ وَذِي النُّورَيْنِ فِي بِشَارَةٍ خَالِدَةٍ.",
-      "card2_title": "حَيَاءُ الْمَلَائِكَةِ",
-      "card2_desc": "اخْتَصَّ بِمَقَامٍ لَمْ يَبْلُغْهُ غَيْرُهُ، حِينَ قَالَ ﷺ: 'أَلَا أَسْتَحِي مِنْ رَجُلٍ تَسْتَحِي مِنْهُ الْمَلَائِكَةُ؟'؛ لِعِظَمِ طُهْرِهِ وَسُمُوِّ أَخْلَاقِهِ الَّتِي أَعْجَزَتِ الْبَشَرَ.",
-      "card3_title": "رَفِيقُ الْجَنَّةِ",
-      "card3_desc": "نَالَ أَسْمَى شَرَفٍ عِنْدَمَا بَشَّرَهُ الرَّسُولُ ﷺ بِقَوْلِهِ: 'لِكُلِّ نَبِيٍّ رَفِيقٌ، وَرَفِيقي فِي الْجَنَّةِ عُثْمَانُ'؛ لِيَكُونَ جَارَ الْمُصْطَفَى فِي أَعْلَى عِلِّيِّينَ.",
-      "card4_title": "صَبْرُ الشَّهَادَةِ",
-      "card4_desc": "بَشَّرَهُ النَّبِيُّ ﷺ بِالْجَنَّةِ 'عَلَى بَلْوَى تُصِيبُهُ'، فَكَانَ مَوْقِفُهُ يَوْمَ الدَّارِ تَجْسِيداً لِلثَّبَاتِ عَلَى الْحَقِّ حَتَّى لَقِيَ رَبَّهُ صَائِمًا شَهِيدًا.",
-      "card5_title": "جَامِعُ الْكِتَابِ",
-      "card5_desc": "شَرَّفَهُ اللهُ بِحِفْظِ الْقُرْآنِ مِنْ ضَيَاعِ الْقِرَاءَاتِ، فَجَمَعَ الْأُمَّةَ عَلَى 'الْمُصْحَفِ الْإِمَامِ'، لِيَبْقَى أَثَرُهُ نُوراً يَتْلُوهُ الْمُسْلِمُونَ إِلَى يَوْمِ الدِّينِ.",
-      "card6_title": "سَخَاءُ الْعُسْرَةِ",
-      "card6_desc": "حِينَ جَهَّزَ جَيْشَ الْعُسْرَةِ بِثُلُثِ مَالِهِ، نَزَلَ فِيهِ قَوْلُ النَّبِيِّ ﷺ: 'مَا ضَرَّ عُثْمَانَ مَا فَعَلَ بَعْدَ الْيَوْمِ'؛ صَكُّ غُفْرَانٍ لَا يَنَالُهُ إِلَّا نُخْبَةُ النُّخْبَةِ.",
-      "card7_title": "صَاحِبُ الْهِجْرَتَيْنِ",
-      "card7_desc": "نَالَ مَزِيَّةً لَمْ تَجْتَمِعْ لِكَثِيرٍ، فَهَاجَرَ بِأَهْلِهِ إِلَى الْحَبَشَةِ فِرَاراً بِالدِّينِ، ثُمَّ هَاجَرَ إِلَى الْمَدِينَةِ، فَاسْتَحَقَّ أَجْرَ الصَّابِرِينَ الْمُهَاجِرِينَ.",
-      "card8_title": "ذُو النُّورَيْنِ",
-      "card8_desc": "تَفَرَّدَ بِمَنْقَبَةٍ لَمْ تَكُنْ لِبَشَرٍ مُنْذُ آدَمَ إِلَى قِيَامِ السَّاعَةِ؛ وَهِيَ زَوَاجُهُ مِنِ ابْنَتَيْ نَبِيٍّ (رُقَيَّةَ ثُمَّ أُمِّ كُلْثُومٍ) رَضِيَ اللهُ عَنْهُمَا.",
-      "card9_title": "سَاقِي الْمُسْلِمِينَ",
-      "card9_desc": "اشْتَرَى بِئْرَ رُومَةَ مِنْ مَالِهِ الْخَاصِّ وَجَعَلَهَا وَقْفًا لِلْمُسْلِمِينَ حِينَ عَزَّ الْمَاءُ، فَكَانَ سَبَبًا فِي رَيِّ ظَمَأِ الْأُمَّةِ وَنَيْلِ رِضَا رَبِّ الْبَرِيَّةِ."
+      "title": "His Station of Virtue and Glad Tidings of Divine Pleasure",
+      "card1_title": "The Ten Promised Paradise",
+      "card1_desc": "One of the early Muslims whom the Prophet ﷺ bore witness to their entry into Paradise in a single gathering.",
+      "card2_title": "The Shyness of the Angels",
+      "card2_desc": "When the Prophet ﷺ said: 'Should I not be shy of a man whom the angels are shy of?' — due to the greatness of his purity.",
+      "card3_title": "Companion in Paradise",
+      "card3_desc": "The Messenger ﷺ gave him the glad tidings: 'Every prophet has a companion, and my companion in Paradise is Uthman.'",
+      "card4_title": "The Patience of Martyrdom",
+      "card4_desc": "The Prophet ﷺ promised him Paradise through a trial that would befall him, and he remained patient until he met his Lord as a martyr.",
+      "card5_title": "Compiler of the Book",
+      "card5_desc": "Allah honored him with the preservation of the Quran; he united the Ummah upon the 'Mushaf al-Imam' (the Imam's Codex).",
+      "card6_title": "The Generosity of Hardship",
+      "card6_desc": "About him the Prophet ﷺ said: 'Nothing Uthman does after today will harm him' — after he outfitted the army.",
+      "card7_title": "The One Who Emigrated Twice",
+      "card7_desc": "He emigrated with his family to Abyssinia and then to Madinah, earning the full reward of the patient emigrants.",
+      "card8_title": "Dhul-Nurayn",
+      "card8_desc": "He was distinguished by a honor granted to no other human being — marriage to two daughters of a Prophet ﷺ.",
+      "card9_title": "The One Who Quenched the Muslims",
+      "card9_desc": "He purchased the Well of Rumah from his own wealth and made it a perpetual endowment (waqf) for all Muslims."
     },
-    "video":"https://www.youtube.com/embed/oXie-AAPqtc?si=ToJ_lucUTIQhkdgT"
-
+    "video": "https://www.youtube.com/embed/EM5TwWTkYrk?si=vzF7-Ow8H5Q6ScJr",
+    "tajerAlRahman": {
+      "label": "Giving and Generosity",
+      "title": "The Merchant of the Most Merciful: Spending in the Path of Allah",
+      "description": "Uthman — may Allah be pleased with him — was not merely a wealthy merchant; he was an outstanding model of harnessing wealth in service of faith and humanity. His compassion and generosity shone brightest in the darkest of circumstances — from purchasing the Well of Rumah with his own money to quench the thirst of Muslims, to equipping the Army of Hardship for the Battle of Tabuk, to expanding the Prophet's Mosque.",
+      "callout": "Nothing Uthman does after today will harm him",
+      "subtasks": {
+        "army": "Equipping the Army of Hardship (Battle of Tabuk)",
+        "well": "The Well of Rumah and its story of quenching the Muslims",
+        "mosque": "Expansion of the Prophet's Mosque"
+      }
+    },
+    "quranCollection": {
+      "label": "The Greatest Achievement",
+      "title": "The Compilation of the Quran and Unification of the Mushaf",
+      "description": "As the Islamic state expanded and tongues became mixed through the conquests of new lands, Uthman ibn Affan — may Allah be pleased with him — sensed an imminent danger threatening the unity of the Ummah: disagreement in the recitation of the Book of Allah. By a wise and sovereign decision, with the consensus of the senior Companions, he ordered the Quran to be written in the dialect of Quraysh in which the revelation had descended, to serve as a single authoritative reference beyond any doubt. He gifted the world the 'Mushaf al-Imami' which protected the Wise Reminder from distortion and fragmentation across the centuries — making this achievement the greatest bond that preserved Muslim unity and united their hearts upon a common word until the Day of Judgment.",
+      "distributionLabel": "The regions to which the Mushaf was sent:",
+      "regions": "Makkah al-Mukarramah, Al-Sham, Kufa, Basra, Yemen, Bahrain, and Madinah al-Munawwarah",
+      "callout": "The Mushaf al-Imami: Unity of the Word",
+      "figcaption": "The Mushaf of Uthman ibn Affan — may Allah be pleased with him"
+    },
+    "sec-title": "Achievements of the Era of Uthman ibn Affan",
+    "sec-dec": "The caliphate of Dhul-Nurayn was not merely a continuation of what came before — it was a golden age that witnessed the first naval fleet in Islamic history, the greatest wave of conquests spanning three continents, and a solid administrative organization that preserved the prestige and stability of the state.",
+    "wars": {
+      "secc-title": "Conquests",
+      "seccc-title": "Achievements",
+      "secc-des": "An era of expansion, conquests, generosity, and prosperity",
+      "list": [
+        {
+          "name": "Conquests of the East and Persia",
+          "content": {
+            "introduction": "Completing the march begun by al-Faruq Umar to end the Sassanid presence and spread Islam across the regions of Central Asia.",
+            "causes": "Some Persian factions broke their treaties after the death of Umar ibn al-Khattab, necessitating the securing of the state's eastern borders.",
+            "events": "Armies marched toward the eastern regions, subduing cities that had revolted and opening new territories the Muslims had never reached before.",
+            "results": "The complete collapse of the Sassanid Empire, vast new lands entering Islam, and the flow of spoils into the treasury.",
+            "leaders": [
+              "Al-Ahnaf ibn Qays",
+              "Abdullah ibn Amir"
+            ]
+          }
+        },
+        {
+          "name": "Conquests of Armenia and the Caucasus",
+          "content": {
+            "introduction": "Expansion into the mountainous northern regions to secure the borders of Al-Sham and Iraq from Byzantine and Khazar raids.",
+            "causes": "The Byzantines used the mountainous regions to launch attacks against Muslims, and Muawiyah ibn Abi Sufyan requested that this front be secured.",
+            "events": "The campaigns culminated in the conquest of Armenia and Azerbaijan, with armies reaching the rugged peaks of the Caucasus.",
+            "results": "Muslim control over northern trade routes and fortification of the state against Byzantine attacks from the north.",
+            "leaders": [
+              "Habib ibn Maslamah al-Fihri",
+              "Salman ibn Rabia al-Bahili"
+            ]
+          }
+        },
+        {
+          "name": "Conquests of Ifriqiyyah (Tunisia)",
+          "content": {
+            "introduction": "Setting out westward from Egypt to conquer the regions of Ifriqiyyah (present-day Tunisia) and spread Islam across the greater Maghreb.",
+            "causes": "Securing Egypt's western borders and cutting off Byzantine hopes of regaining control over North Africa.",
+            "events": "The great Battle of Sbeitla took place, in which the Muslims triumphed over King Gregory (Gregorius), who had dominated the region.",
+            "results": "The fall of Byzantine influence in Tunisia, payment of tribute to the Muslims, and the paving of the way for the future conquest of the Maghreb and Andalusia.",
+            "leaders": [
+              "Abdullah ibn Sa'd ibn Abi al-Sarh",
+              "Abdullah ibn al-Zubayr"
+            ]
+          }
+        },
+        {
+          "name": "Naval Conquests (Cyprus)",
+          "content": {
+            "introduction": "The first naval campaign in Islamic history, targeting the island of Cyprus to establish a defensive base in the Mediterranean Sea.",
+            "causes": "The Byzantines used the island of Cyprus as a supply hub for their fleets and a base to attack the coasts of Al-Sham and Egypt.",
+            "events": "Uthman ordered the construction of the first Islamic fleet, and the ships sailed from the coasts of Al-Sham, opening the island through a peace treaty.",
+            "results": "The establishment of the first Islamic naval force, the securing of Muslim coastlines, and the imposition of tribute on the people of Cyprus.",
+            "leaders": [
+              "Muawiyah ibn Abi Sufyan",
+              "Abdullah ibn Qays al-Jasi"
+            ]
+          }
+        },
+        {
+          "name": "Securing the Borders of Al-Sham",
+          "content": {
+            "introduction": "Strengthening defenses and fortifications in Al-Sham to face continuous Byzantine threats.",
+            "causes": "Repeated Byzantine Empire attempts to recapture Antioch and northern Al-Sham.",
+            "events": "Building fortresses, restoring border strongholds, and conducting summer and winter campaigns to pursue the remnants of Byzantine forces.",
+            "results": "Stabilization of security in Al-Sham and prevention of any Byzantine penetration into the Muslim heartland.",
+            "leaders": [
+              "Muawiyah ibn Abi Sufyan"
+            ]
+          }
+        },
+        {
+          "name": "Egypt and Alexandria",
+          "content": {
+            "introduction": "Re-opening Alexandria and consolidating Islamic rule in Egypt after a Byzantine-backed rebellion attempt.",
+            "causes": "A Byzantine fleet landed in Alexandria with support from some of its inhabitants in an attempt to break the peace treaty.",
+            "events": "A fierce battle was fought in which the Muslims recaptured the city and expelled the Byzantine forces from it entirely.",
+            "results": "Affirming Islamic sovereignty over Egypt and transforming Alexandria into a major naval base.",
+            "leaders": [
+              "Amr ibn al-As"
+            ]
+          }
+        },
+        {
+          "name": "Kerman",
+          "content": {
+            "introduction": "The conquest of the historical region of Kerman in the Persian lands.",
+            "causes": "Completing the conquest of the remaining provinces belonging to the former Sassanid Empire.",
+            "events": "Clashes with local forces ended with the opening of the city and the spread of Islam within it.",
+            "results": "Securing the route toward Sind and India and increasing the state's resources.",
+            "leaders": [
+              "Abdullah ibn Amir",
+              "Al-Rabi ibn Ziyad al-Harithi"
+            ]
+          }
+        },
+        {
+          "name": "Khorasan",
+          "content": {
+            "introduction": "The conquest of the vast region of Khorasan, the gateway to Central Asia.",
+            "causes": "The presence of remnants of the Persian army there, and the geostrategic importance of the region.",
+            "events": "The main cities — such as Merv, Nishapur, and Herat — were opened after sieges and multiple battles.",
+            "results": "Khorasan transformed into a major Islamic cultural and military center in the East.",
+            "leaders": [
+              "Al-Ahnaf ibn Qays"
+            ]
+          }
+        },
+        {
+          "name": "Sistan",
+          "content": {
+            "introduction": "The conquest of the Sistan region, located in the border area between present-day Iran and Afghanistan.",
+            "causes": "Securing the state's eastern frontiers and preventing infiltration from the mountainous regions.",
+            "events": "The Islamic armies advanced through deserts and mountains and opened 'Zaranj,' the capital of the region.",
+            "results": "The spread of Islam in distant provinces and the expansion of the Caliphate's influence to encompass present-day Afghan territories.",
+            "leaders": [
+              "Al-Rabi ibn Ziyad al-Harithi"
+            ]
+          }
+        }
+      ]
+    },
+    "achievements": [
+      {
+        "name": "Policy of Following and Delegation",
+        "content": {
+          "description": "Uthman — may Allah be pleased with him — adhered to the Book of Allah and the Sunnah of the Prophet ﷺ, followed the path of the Rightly Guided Caliphs, relied on consultation (shura), and did not intervene in people's affairs except when necessary.",
+          "impact": "This led to societal stability in the first half of his caliphate and the spread of a spirit of disciplined freedom within the bounds of Islamic law.",
+          "examples": [
+            "His commitment to the decisions of the shura council in appointing governors",
+            "Application of the prescribed legal punishments without exception"
+          ]
+        }
+      },
+      {
+        "name": "Consolidation of the Shura Council",
+        "content": {
+          "description": "He consolidated the Shura Council comprising senior Companions to participate in running the state and making decisions.",
+          "members": [
+            "Ali ibn Abi Talib",
+            "Abd al-Rahman ibn Awf",
+            "Abdullah ibn Umar",
+            "Talhah ibn Ubaydillah",
+            "Al-Zubayr ibn al-Awwam",
+            "Sa'd ibn Abi Waqqas"
+          ],
+          "impact": "Strengthening the unity among senior Companions and ensuring the soundness of momentous decisions related to conquests and governance."
+        }
+      },
+      {
+        "name": "Building the Judicial System",
+        "content": {
+          "description": "Uthman — may Allah be pleased with him — was among the first to organize the judiciary and establish courts in the Islamic state as independent institutions.",
+          "judges": [
+            "Zayd ibn Thabit (Madinah)",
+            "Abu al-Darda (Damascus)",
+            "Ka'b ibn Sur (Basra)",
+            "Shuraih (Kufa)",
+            "Ya'la ibn Umayyah (Yemen)",
+            "Thumamah (Sana'a)",
+            "Uthman ibn Qays (Egypt)"
+          ],
+          "impact": "Separating the judiciary from the mosque in some regions to increase the court's prestige and organize court records."
+        }
+      },
+      {
+        "name": "Administration and Organization of the Provinces",
+        "content": {
+          "description": "He reorganized the provinces and appointed new governors in the best interest of the state, relying on consultation with those of sound judgment.",
+          "changes": [
+            "Meticulous monitoring of governors' conduct and holding them accountable",
+            "Development of financial bureaus (diwans) in the newly opened regions"
+          ],
+          "impact": "Achieving administrative balance across a vast state and ensuring rights reached their rightful owners."
+        }
+      },
+      {
+        "name": "Merging of Provinces",
+        "content": {
+          "description": "He merged some smaller provinces together to achieve better administrative and military efficiency.",
+          "examples": [
+            "Unifying the provinces of Al-Sham under a single command (Muawiyah ibn Abi Sufyan)",
+            "Annexing Bahrain to the province of Basra"
+          ],
+          "impact": "Facilitating military decision-making and consolidating the financial and administrative resources of each region."
+        }
+      }
+    ],
+    "fitna_and_martyrdom": {
+      "title": "The Fitna and Martyrdom (Patience and Steadfastness)",
+      "events": [
+        {
+          "id": "siege_events",
+          "name": "Events of the Siege and His Stance on Protecting Bloodshed",
+          "content": {
+            "description": "Uthman was besieged in his home for forty days, during which water and food were withheld from him. Despite the ability of senior Companions and their sons — such as al-Hasan and al-Husayn — to fight the besiegers, the Caliph firmly refused to allow a single drop of Muslim blood to be shed for his sake.",
+            "heroic_stance": "His famous words: 'I adjure every person who owes me a right to hold back his hand' — choosing martyrdom over causing chaos in the city of the Messenger of Allah.",
+            "impact": "Uthman entrenched the principle of patient steadfastness and set the most magnificent example of selflessness and protection of the Ummah's unity in its most difficult moments."
+          }
+        },
+        {
+          "id": "martyrdom_story",
+          "name": "The Story of His Martyrdom While Reading the Quran",
+          "content": {
+            "description": "On the morning of a Friday, while the Caliph was fasting and reciting the verses of the Book of Allah, the rebels stormed his home and attacked him as he sat between his hands holding his Mushaf.",
+            "final_moments": "His pure blood flowed onto the very Mushaf he had compiled — specifically upon the words of Allah: (And Allah will be sufficient for you against them, and He is the All-Hearing, the All-Knowing).",
+            "legacy": "He ascended as a patient and hopeful martyr, bringing to a close the longest caliphate of the Rightly Guided era and opening a new chapter in the history of the Ummah."
+          }
+        }
+      ]
+    },
+    "quotes_section": {
+      "title": "Sayings and Wisdom",
+      "subtitle": "From His Sermons on Asceticism and Piety",
+      "author_name": "Uthman ibn Affan",
+      "quotes": [
+        {
+          "id": 1,
+          "text": "O people, fear Allah the Exalted, for taqwa (God-consciousness) is a blessing. The wisest of people is he who takes himself to account and works for what comes after death, and seeks from the light of Allah a light for the darkness of the grave. Let every servant fear that Allah will raise him blind on the Day of Resurrection when he had been sighted. Know that whoever has Allah with him fears nothing, and whoever has Allah against him — whom can he hope in after that?"
+        },
+        {
+          "id": 2,
+          "text": "Indeed, Allah has given you this world so that you may seek the Hereafter through it — so do not lean upon it, for this world will come to an end and the final destination is to Allah the Exalted. Therefore, fear Allah, for His taqwa is a shield from His wrath and a protection from His punishment."
+        },
+        {
+          "id": 3,
+          "text": "Every thing has a blight, and every blessing has a defect. The blight of this religion and the defect of this blessing are those who constantly find fault and slander — they show you what you love and conceal what you hate. They are a riffraff like ostriches, following the first caller. As for the envier — it suffices you that he grieves at the time of your joy."
+        },
+        {
+          "id": 4,
+          "text": "The best of servants is he who guards himself and seeks protection in the Book of Allah the Exalted, looks at the grave and weeps, and says: 'It is the first station of the Hereafter and the last station of this world. Whoever faces hardship there — what follows will be no easier. And whoever finds ease there — what follows will be no harder.'"
+        },
+        {
+          "id": 5,
+          "text": "You are more in need of a leader who acts than a leader who merely speaks. This world is lush and enticing and many have been drawn to it — so do not lean upon it and do not trust it, for it is untrustworthy. Know that it will not leave anyone who does not leave it first."
+        },
+        {
+          "id": 6,
+          "text": "If our hearts were truly pure, we would never tire of the words of our Lord. And truly I detest that any day should pass over me without me looking into the Mushaf."
+        }
+      ]
+    }
   }
 }
