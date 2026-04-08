@@ -3,6 +3,28 @@ import { motion, px } from 'framer-motion';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+
+interface ConquestCardProps {
+    title: React.ReactNode;
+    direction: string;
+    delay: number;
+}
+
+const ConquestCard = ({ title, direction, delay }: ConquestCardProps) => (
+    <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay, duration: 0.8 }}
+        viewport={{ once: true }}
+        className="p-8 border border-white/10 bg-white/5 backdrop-blur-md rounded-2xl hover:border-[#fbbf24]/50 transition-all duration-500"
+    >
+        <p className="text-2xl md:text-3xl text-slate-200 font-amiri leading-relaxed">
+            {title}
+        </p>
+        <p className="text-[#fbbf24] font-tufuli mt-4 text-lg">{direction}</p>
+    </motion.div>
+);
+
 export default function UmarIbnAlKhattab() {
     const t = useTranslations('umarIbnAlKhattab');
 
@@ -1027,9 +1049,6 @@ export default function UmarIbnAlKhattab() {
 <section className="relative min-h-screen py-32 px-6 flex flex-col items-center justify-center bg-black">
     {/* خلفية توحي بـ "الصرامة" - خطوط حادة */}
     <div className="absolute top-0 right-0 w-1/3 h-full bg-[#7b001c]/5 skew-x-[-15deg] pointer-events-none" />
-
-
-
         <div className="relative mt-40">
             <motion.h2 className="text-5xl md:text-8xl font-tufuli text-center mb-16 relative z-20">
                 {t.rich("universalJustice.title", {
@@ -1068,6 +1087,194 @@ export default function UmarIbnAlKhattab() {
                 </motion.div>
             </div>
         </div>
+</section>
+<section className="relative min-h-screen py-32 px-6 bg-[#050505] overflow-hidden">
+    {/* تأثير خلفية "خريطة قديمة" باهتة جداً */}
+    <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('/map-texture.png')] bg-cover bg-center grayscale" />
+    
+    {/* هالة ضوئية خلف العنوان */}
+    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[#7b001c]/10 blur-[120px] rounded-full pointer-events-none" />
+
+    <div className="max-w-7xl mx-auto relative z-10">
+        
+        {/* 🏆 العنوان الرئيسي */}
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-center mb-32"
+        >
+            <h2 className="text-6xl md:text-[10rem] font-tufuli leading-none tracking-tight">
+                {t.rich("conquests.title", {
+                    gold: (w) => <span className="bg-gradient-to-b from-[#fbbf24] via-[#d4af37] to-transparent bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(251,191,36,0.4)]">{w}</span>
+                })}
+            </h2>
+            <motion.p 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="text-xl md:text-3xl font-amiri text-slate-400 max-w-4xl mx-auto mt-12 leading-relaxed italic"
+            >
+                {t("conquests.intro")}
+            </motion.p>
+        </motion.div>
+
+        {/* ⚔️ شبكة الفتوحات (Grid Layout) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32">
+            
+            {/* فارس - الشرق */}
+            <ConquestCard 
+                title={t.rich("conquests.sectionOne", {
+                    focus: (w) => <span className="text-[#7b001c] font-black">{w}</span>,
+                    highlight: (w) => <span className="text-[#fbbf24]">{w}</span>
+                })}
+                direction="الشرق"
+                delay={0.1}
+            />
+
+            {/* الشام - الغرب */}
+            <ConquestCard 
+                title={t.rich("conquests.sectionTwo", {
+                    focus: (w) => <span className="text-[#fbbf24] font-black">{w}</span>,
+                    highlight: (w) => <span className="text-white underline decoration-[#7b001c]">{w}</span>
+                })}
+                direction="الشام"
+                delay={0.3}
+            />
+
+            {/* مصر - الكنانة */}
+            <ConquestCard 
+                title={t.rich("conquests.sectionThree", {
+                    focus: (w) => <span className="text-[#d4af37] font-black italic">{w}</span>
+                })}
+                direction="مصر"
+                delay={0.5}
+            />
+        </div>
+
+        {/* 🛡️ سيكشن التحديات والنتيجة (التصميم العريض) */}
+        <div className="space-y-16">
+            <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="bg-white/[0.02] border-l-4 border-[#7b001c] p-12 backdrop-blur-sm rounded-r-3xl"
+            >
+                <p className="text-2xl md:text-4xl font-amiri leading-[2.2] text-slate-200">
+                    {t("conquests.sectionFour")}
+                </p>
+            </motion.div>
+
+            <motion.div 
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="bg-[#fbbf24]/5 border-r-4 border-[#fbbf24] p-12 backdrop-blur-sm rounded-l-3xl text-right"
+            >
+                <p className="text-2xl md:text-4xl font-amiri leading-[2.2] text-slate-100">
+                    {t("conquests.sectionFive")}
+                </p>
+            </motion.div>
+        </div>
+
+        {/* 📜 الخاتمة النهائية للفتوحات */}
+        <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="mt-40 p-16 text-center border-t border-white/10"
+        >
+            <p className="text-3xl md:text-6xl font-tufuli text-white leading-snug">
+                {t("conquests.closing")}
+            </p>
+        </motion.div>
+    </div>
+</section>
+<section className="relative py-24 bg-[#080808] border-y border-white/5">
+    <div className="max-w-4xl mx-auto px-6 text-center">
+        {/* أيقونة المفتاح القديم كخلفية باهتة */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20rem] text-white/[0.02] font-tufuli pointer-events-none">
+            🗝️
+        </div>
+
+        <motion.h2 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="text-4xl md:text-6xl font-tufuli mb-12"
+        >
+            {t.rich("covenant.title", {
+                gold: (w) => <span className="text-[#fbbf24] border-b-4 border-[#fbbf24]/20 pb-2">{w}</span>
+            })}
+        </motion.h2>
+
+        <motion.p 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            className="text-2xl md:text-4xl font-amiri leading-[2.2] text-slate-300 relative z-10"
+        >
+            {t.rich("covenant.content", {
+                highlight: (w) => <span className="text-white font-bold">{w}</span>,
+                focus: (w) => <span className="text-[#7b001c] font-black">{w}</span>,
+                gold: (w) => <span className="text-[#fbbf24] italic">{w}</span>
+            })}
+        </motion.p>
+    </div>
+</section>
+<section className="relative min-h-screen py-32 px-6 bg-[#050505]">
+    {/* تأثير خلفية "حبر متناثر" */}
+    <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('/ink-splatter.png')] bg-repeat" />
+
+    <div className="max-w-7xl mx-auto relative z-10">
+        
+        {/* العناوين */}
+        <div className="text-center mb-24">
+            <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="text-6xl md:text-8xl font-tufuli mb-6"
+            >
+                {t.rich("letters.title", {
+                    focus: (w) => <span className="text-[#fbbf24] drop-shadow-[0_0_20px_#fbbf2455]">{w}</span>
+                })}
+            </motion.h2>
+            <p className="text-xl md:text-2xl font-amiri text-slate-400 max-w-2xl mx-auto italic leading-relaxed">
+                {t("letters.subtitle")}
+            </p>
+        </div>
+
+        {/* شبكة الرسائل - Masonry Grid */}
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+            
+            {/* الكروت - تكرار المكون لكل رسالة */}
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+                <motion.div
+                    key={num}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    className="break-inside-avoid relative p-8 rounded-2xl bg-gradient-to-br from-white/[0.07] to-transparent border border-white/10 hover:border-[#fbbf24]/40 transition-all group overflow-hidden"
+                >
+                    {/* ختم شمعي أحمر باهت في الزاوية */}
+                    <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#7b001c]/10 rounded-full blur-2xl group-hover:bg-[#7b001c]/30 transition-colors" />
+                    
+                    <div className="relative z-10">
+                        <h4 className="text-[#fbbf24] font-tufuli text-lg mb-4 opacity-70 group-hover:opacity-100 transition-opacity">
+                            {t(`letters.card${num}.to`)}
+                        </h4>
+                        
+                        <p className="text-xl md:text-2xl font-amiri text-slate-200 leading-[1.8] text-right">
+                            {t.rich(`letters.card${num}.text`, {
+                                gold: (w) => <span className="text-[#d4af37] font-bold underline decoration-[#d4af37]/20 underline-offset-4">{w}</span>,
+                                focus: (w) => <span className="text-[#7b001c] font-black">{w}</span>,
+                                highlight: (w) => <span className="text-white font-bold">{w}</span>,
+                                soft: (w) => <span className="italic text-slate-400 border-b border-[#7b001c]">{w}</span>
+                            })}
+                        </p>
+                    </div>
+
+                    {/* شعور الورق القديم (Texture) */}
+                    <div className="absolute inset-0 opacity-10 pointer-events-none group-hover:opacity-20 transition-opacity bg-[url('/subtle-paper.png')]" />
+                </motion.div>
+            ))}
+        </div>
+    </div>
 </section>
 <section className="relative min-h-screen py-32 px-6 flex flex-col items-center justify-center bg-black overflow-hidden">
     {/* تأثير "الدم والشروق" - هالة حمراء خافتة جداً في الأسفل */}
@@ -1200,6 +1407,104 @@ export default function UmarIbnAlKhattab() {
         </motion.p>
     </div>
 </section>
+      <section className="relative min-h-screen py-32 px-6 bg-black overflow-hidden border-t border-white/5">
+  {/* تأثير ضوء هادئ من الأعلى */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-gradient-to-b from-[#7b001c]/10 to-transparent pointer-events-none" />
+
+  <div className="max-w-7xl mx-auto z-10 relative">
+
+    {/* العناوين */}
+    <motion.div className="text-center mb-24">
+      <h2 className="text-6xl md:text-8xl font-tufuli mb-6">
+        {t.rich("resources.title", {
+          gold: (w) => (
+            <span className="text-[#fbbf24] drop-shadow-[0_0_20px_rgba(251,191,36,0.4)]">
+              {w}
+            </span>
+          ),
+        })}
+      </h2>
+      <p className="text-xl md:text-2xl font-amiri text-slate-400 italic">
+        {t("resources.subtitle")}
+      </p>
+    </motion.div>
+
+    <div className="grid lg:grid-cols-12 gap-16 items-start">
+
+      {/* 📚 القصص - 7 أعمدة */}
+      <div className="lg:col-span-7 space-y-8">
+        <h3 className="text-[#7b001c] font-tufuli text-3xl mb-8 flex items-center gap-4">
+          <span className="w-12 h-[2px] bg-[#7b001c]" />
+          {t("resources.stories.label")}
+        </h3>
+
+        {([1, 2, 3] as const).map((i) => (
+          <motion.a
+            key={i}
+            href={t(`resources.stories.item${i}.href`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ x: -10 }}
+            className="group block p-8 bg-white/[0.03] border border-white/5 hover:border-[#fbbf24]/50 hover:bg-[#fbbf24]/5 transition-all rounded-2xl relative overflow-hidden"
+          >
+            <div className="flex justify-between items-center mb-4">
+              <span className="text-[#fbbf24] font-bold tracking-widest text-sm italic">
+                STORY 0{i}
+              </span>
+              <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#fbbf24] group-hover:text-black transition-colors">
+                ←
+              </div>
+            </div>
+            <h4 className="text-2xl md:text-3xl font-tufuli text-white mb-4">
+              {t(`resources.stories.item${i}.title`)}
+            </h4>
+            <p className="text-lg md:text-xl font-amiri text-slate-400 leading-relaxed">
+              {t(`resources.stories.item${i}.desc`)}
+            </p>
+          </motion.a>
+        ))}
+      </div>
+      {/* 📜 المصادر - 5 أعمدة */}
+      <div className="lg:col-span-5 sticky top-32">
+        <div className="p-10 bg-gradient-to-b from-[#7b001c]/10 to-transparent border border-[#7b001c]/20 rounded-3xl backdrop-blur-md">
+          <h3 className="text-[#fbbf24] font-tufuli text-3xl mb-10 flex items-center gap-4">
+            <span className="w-12 h-[2px] bg-[#fbbf24]" />
+            {t("resources.sources.label")}
+          </h3>
+
+          <div className="space-y-8">
+            {t.raw("resources.sources.books").map(
+              (book: { name: string; author: string }, index: number) => (
+                <div
+                  key={index}
+                  className="flex gap-6 items-start border-b border-white/5 pb-6 last:border-0"
+                >
+                  <span className="text-[#7b001c] font-black text-2xl">
+                    0{index + 1}
+                  </span>
+                  <div>
+                    <h5 className="text-xl md:text-2xl text-slate-100 font-bold mb-1">
+                      {book.name}
+                    </h5>
+                    <p className="text-slate-500 font-amiri italic tracking-wide">
+                      {book.author}
+                    </p>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
+
+          {/* ملاحظة ختامية */}
+          <div className="mt-12 p-6 border-t border-white/10 opacity-60 italic text-sm text-slate-400">
+            * جميع المعلومات المذكورة تم مراجعتها تاريخياً لضمان الدقة في نقل
+            سيرة الفاروق رضي الله عنه.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       <section className="relative w-full max-w-5xl mx-auto px-6 py-20 z-10 border-t border-white/5 mt-20">
         <div className="flex flex-col items-center text-center space-y-6">
           <span className="text-amber-400/60 font-tufuli text-sm tracking-widest uppercase">
@@ -1226,37 +1531,6 @@ export default function UmarIbnAlKhattab() {
           </p>
         </div>
       </section>
-{/* الـ Footer */}
-<footer className="relative bg-black border-t border-amber-500/20 py-12">
-  <div className="container mx-auto px-6">
-    <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-      
-      {/* اللوجو أو اسم المشروع */}
-      <div className="text-right">
-        <h3 className="text-2xl font-bold text-amber-500 font-tufuli tracking-wider">نُخبةُ الصَّحابة</h3>
-        <p className="text-zinc-500 font-tufuli mt-2 italic">رضي الله عنهم وأرضاهم</p>
-      </div>
-
-      {/* حقوق الملكية وأصحاب الموقع */}
-      <div className="text-center md:text-right border-r-0 md:border-r border-amber-500/30 pr-0 md:pr-8">
-        <p className="text-zinc-400 font-tufuli text-lg">صُنع بحب وإخلاص بواسطة:</p>
-        <div className="flex gap-4 mt-2 justify-center md:justify-end">
-          <span className="text-white font-bold font-tufuli hover:text-amber-500 transition-colors cursor-default">حازم النمر</span>
-          <span className="text-amber-500 opacity-50">|</span>
-          <span className="text-white font-bold font-tufuli hover:text-amber-500 transition-colors cursor-default">عادل محمد</span>
-        </div>
-      </div>
-
-    </div>
-
-    {/* السطر الأخير */}
-    <div className="mt-12 pt-8 border-t border-zinc-900 text-center">
-      <p className="text-zinc-600 text-sm font-sans tracking-widest uppercase">
-        &copy; {new Date().getFullYear()} Nokhbat Al-Sahaba. All Rights Reserved.
-      </p>
-    </div>
-  </div>
-</footer>
     </motion.main>
     );
 }

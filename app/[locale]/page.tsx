@@ -288,9 +288,12 @@ export default function Home() {
         {t('companions.ali.bio')}
       </p>
 
-      <button className="px-8 py-3 border border-amber-500/50 text-amber-500 font-tufuli hover:bg-amber-500 hover:text-black transition-all duration-300 rounded-full">
-        {t('companions.ali.btn')}
-      </button>
+      <Link
+  href="/ali-ibn-abi-talib"
+  className="inline-block px-8 py-3 border border-amber-500/50 text-amber-500 font-tufuli hover:bg-amber-500 hover:text-black transition-all duration-300 rounded-full"
+>
+  {t('companions.ali.btn')}
+</Link>
     </motion.div>
 
     {/* 2. الجانب البصري - على الشمال */}
