@@ -28,9 +28,10 @@ import {
   Layers,
   ShieldAlert,
   Quote,
-} from "lucide-react";
+} 
+from "lucide-react";
 export default function UthmanIbnAffan() {
-  const t = useTranslations("uthmanBinAffan");
+  const t = useTranslations("uthmanIbnAffan");
 
   const containerVariants = {
     hidden: { opacity: 0 },

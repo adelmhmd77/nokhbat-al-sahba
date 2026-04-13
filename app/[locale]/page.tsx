@@ -11,7 +11,7 @@ export default function Home() {
       
       {/* 1. منطقة الـ Hero - أول حاجة المستخدم بيشوفها */}
       <section className="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden">
-        
+      
         {/* الحاوية اللي فيها الزخرفة والنص */}
         <div className="relative w-full max-w-3xl aspect-[1/1] flex flex-col items-center justify-center">
           {/* النص الجامد في الفراغ اللي في النص */}

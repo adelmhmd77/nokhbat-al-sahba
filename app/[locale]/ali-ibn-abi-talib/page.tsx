@@ -1,13 +1,17 @@
 'use client';
 import { motion } from 'framer-motion'; 
 import { useTranslations } from 'next-intl';
-
+import dynamic from 'next/dynamic';
 interface Phase {
   year: string;
   title: string;
   desc: string;
 }
 
+// جرب المسار ده لو الفولدرات جنب بعض
+const StarFieldScene = dynamic(() => import('../../components/StarFieldScene'), {
+  ssr: false,
+});
 export default function AliIbnAbiTalib() {
     const t = useTranslations('aliIbnAbiTalib');
   return (
@@ -96,7 +100,9 @@ export default function AliIbnAbiTalib() {
 <section className="relative py-32 px-6 bg-black">
   {/* خلفية بتوهج أخضر خافت جداً */}
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,_var(--tw-gradient-stops))] from-[#10b981]/5 via-transparent to-transparent opacity-50" />
-
+  <div className="absolute inset-0 z-0 pointer-events-none opacity-70">
+    <StarFieldScene />
+  </div>
   <div className="max-w-6xl mx-auto relative">
     
     {/* العناوين الرئيسية */}
@@ -148,6 +154,62 @@ export default function AliIbnAbiTalib() {
           </motion.div>
         ))}
       </div>
+    </div>
+  </div>
+</section>
+<section className="relative py-32 px-6 bg-[#020202] overflow-hidden">
+  
+  {/* 1. النجوم كخلفية للسيكشن بالكامل */}
+  {/* الـ z-index صفر عشان تكون ورا كل حاجة والـ pointer-events-none عشان متوقفش اللمس */}
+  <div className="absolute inset-0 z-0 pointer-events-none opacity-70">
+    <StarFieldScene />
+  </div>
+
+  {/* 2. تأثير الدخان أو الضباب - فوق النجوم وتحت الكلام */}
+  <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('/smoke.png')] bg-cover mix-blend-overlay z-1" />
+  
+  <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+    
+
+    {/* الجانب النصي - بقى فوق النجوم مباشرة */}
+    <div className="space-y-8 relative z-20">
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+      >
+        <span className="text-[#10b981] text-xl tracking-widest block mb-4">
+          الـعـمـر: 
+          <span className="font-sans font-bold mx-2 inline-block" style={{ fontStyle: 'normal' }}>
+             23 
+          </span>
+          عاماً
+        </span>
+        <h2 className="text-5xl md:text-8xl font-tufuli leading-tight">
+          {t.rich("aliPage.fedaNight.title", {
+            focus: (w) => <span className="text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]">{w}</span>
+          })}
+        </h2>
+      </motion.div>
+
+      <motion.p 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className="text-2xl md:text-4xl font-amiri text-slate-300 leading-relaxed drop-shadow-sm"
+      >
+        {t("aliPage.fedaNight.subtitle")}
+      </motion.p>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="p-8 bg-white/[0.03] border-l-2 border-[#10b981] backdrop-blur-[2px]"
+      >
+        <p className="text-xl md:text-2xl font-amiri text-slate-100 italic">
+          {t("aliPage.fedaNight.story")}
+        </p>
+      </motion.div>
     </div>
 
   </div>
