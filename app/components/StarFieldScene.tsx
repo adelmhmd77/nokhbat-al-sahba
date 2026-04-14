@@ -23,7 +23,7 @@ function AnimatedStars() {
       <Stars 
         radius={50} 
         depth={50} 
-        count={2000} 
+        count={5000} 
         factor={2} 
         saturation={0} 
         fade 
@@ -33,9 +33,9 @@ function AnimatedStars() {
       {/* 2. النجوم الخضراء المتوهجة (Sparkles) */}
       <Float speed={1} rotationIntensity={0.1} floatIntensity={0.2}>
         <Sparkles 
-          count={150} 
+          count={200} 
           scale={[20, 15, 10]} 
-          size={2} 
+          size={20} 
           speed={0.2} 
           opacity={0.4} 
           color="#10b981" 
@@ -44,7 +44,7 @@ function AnimatedStars() {
 
       {/* 3. نجوم بيضاء خفيفة عشان العمق البصري */}
       <Sparkles 
-        count={100} 
+        count={200} 
         scale={[15, 15, 15]} 
         size={1} 
         speed={0.1} 
