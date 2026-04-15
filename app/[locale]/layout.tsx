@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import "./globals.css"; // Make sure your path is correct
+import "./globals.css"; 
 import localFont from "next/font/local";
 
 const Tufuli = localFont({

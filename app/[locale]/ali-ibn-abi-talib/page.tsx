@@ -594,6 +594,609 @@ export default function AliIbnAbiTalib() {
     </div>
   </div>
 </section>
+<section className="relative py-24 px-6 bg-[#020202] border-y border-white/5">
+  <div className="max-w-4xl mx-auto space-y-16 text-right">
+    
+    {/* عنوان المرحلة الجديدة */}
+    <motion.div 
+      initial={{ opacity: 0 }} 
+      whileInView={{ opacity: 1 }}
+      className="text-center"
+    >
+      <h2 className="text-slate-500 text-lg font-tufuli mb-2 tracking-widest uppercase">
+        المرحلة الثانية
+      </h2>
+      <h3 className="text-white text-4xl md:text-6xl font-tufuli">
+        {t("madinahLife.title")}
+      </h3>
+    </motion.div>
+
+    {/* موقف المؤاخاة - تصميم Card مميز */}
+    <motion.div 
+      initial={{ x: 50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      className="p-10 bg-gradient-to-l from-[#10b981]/10 to-transparent border-r-4 border-[#10b981] rounded-l-3xl"
+    >
+      <h4 className="text-[#10b981] text-2xl font-tufuli mb-4">
+        {t("madinahLife.brotherhoodTitle")}
+      </h4>
+      <p className="text-2xl font-amiri text-slate-200 leading-relaxed italic">
+        {t("madinahLife.brotherhoodText")}
+      </p>
+    </motion.div>
+
+    {/* الحياة اليومية - نصوص موزعة بشكل مريح */}
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="grid md:grid-cols-2 gap-8 items-center"
+    >
+      <div className="p-8 border border-white/5 rounded-2xl bg-white/[0.01]">
+        <p className="text-xl font-amiri text-slate-400 leading-relaxed">
+          {t("madinahLife.dailyLife")}
+        </p>
+      </div>
+
+      {/* التمهيد للغزوات - لون مختلف شوية */}
+      <div className="p-8 border border-red-900/20 rounded-2xl bg-red-900/5">
+        <p className="text-xl font-amiri text-red-100/70 leading-relaxed">
+          {t("madinahLife.bridgeToWar")}
+        </p>
+      </div>
+    </motion.div>
+  </div>
+</section>
+<section className="relative py-32 px-6 bg-[#050505] border-y border-red-900/10 overflow-hidden text-right">
+  {/* تأثير "غبار المعركة" في الخلفية */}
+  <div className="absolute inset-0 bg-[url('/dust-texture.png')] opacity-5 pointer-events-none" />
+
+  <div className="max-w-5xl mx-auto space-y-24 relative z-10">
+    
+    {/* رأس السيكشن - بدر */}
+    <motion.div 
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      className="text-center space-y-4"
+    >
+      {/* <h2 className="text-red-600 text-2xl font-tufuli tracking-widest uppercase opacity-80">17 رمضان - <span className="font-san text-red-400">-</span> 2 هـ</h2> */}
+      <h2 className="text-red-600 text-2xl font-tufuli tracking-widest uppercase opacity-80 flex justify-center gap-2 items-center">
+  <span className="font-sans tracking-normal">17</span> 
+  <span>رمضان -</span> 
+  <span className="font-sans tracking-normal">2</span> 
+  <span>هـ</span>
+</h2>
+      <h1 className="text-white text-5xl md:text-8xl font-tufuli drop-shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+        {t("badr.title")}
+      </h1>
+    </motion.div>
+
+    {/* فقرة المبارزة (The Duel) - ستايل سينمائي */}
+    <motion.div 
+      initial={{ x: 30, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      className="relative p-10 bg-white/[0.02] border-r-8 border-red-600 rounded-2xl"
+    >
+      <span className="text-red-600 font-tufuli text-xl mb-4 block">المبارزة الأولى</span>
+      <p className="text-2xl md:text-4xl font-amiri text-slate-200 leading-relaxed italic">
+        {t("badr.theDuel")}
+      </p>
+    </motion.div>
+
+    {/* البطولات والموقف مع عمر الفاروق */}
+    <div className="grid md:grid-cols-2 gap-12">
+      <motion.div 
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        className="space-y-6"
+      >
+        <h3 className="text-[#10b981] text-3xl font-tufuli">زلزال الميدان</h3>
+        <p className="text-xl font-amiri text-slate-400 leading-loose">
+          {t("badr.heroism")}
+        </p>
+      </motion.div>
+
+      <motion.div 
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        className="p-8 bg-white/[0.01] border border-white/5 rounded-3xl"
+      >
+        <h3 className="text-slate-300 text-2xl font-tufuli mb-4">عليٌّ والفاروق</h3>
+        <p className="text-xl font-amiri text-slate-400 leading-relaxed border-l-2 border-slate-700 pl-4 italic">
+          {t("badr.aliAndUmar")}
+        </p>
+      </motion.div>
+    </div>
+
+    {/* القصيدة - برواز ذهبي */}
+    <motion.div 
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      className="p-12 bg-[#10b981]/5 border border-[#10b981]/20 rounded-[3rem] text-center relative"
+    >
+      <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#050505] px-6 text-[#10b981] font-tufuli">
+        {t("badr.poemTitle")}
+      </div>
+      <p className="text-3xl md:text-5xl font-amiri text-white leading-snug whitespace-pre-line">
+        {t("badr.poem")}
+      </p>
+    </motion.div>
+
+    {/* الخاتمة */}
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="text-center pt-10"
+    >
+      <p className="text-2xl md:text-3xl font-amiri text-[#10b981] italic">
+        {t("badr.closing")}
+      </p>
+      <div className="mt-8 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+    </motion.div>
+
+  </div>
+</section>
+<section className="relative py-24 px-6 bg-[#020202] border-y border-white/5 overflow-hidden text-right">
+  {/* إضاءة ذهبية خفيفة توحي بالبهجة */}
+  <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-500/5 blur-[120px] rounded-full" />
+  <div className="absolute inset-0 z-0 pointer-events-none opacity-70">
+    <StarFieldScene />
+  </div>
+  <div className="max-w-4xl mx-auto space-y-16 relative z-10">
+    
+    {/* العنوان */}
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="text-center"
+    >
+      <h2 className="text-[#d4af37] text-3xl md:text-5xl font-tufuli tracking-wide">
+        {t("fatimaMarriage.title")}
+      </h2>
+      <div className="h-0.5 w-24 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4" />
+    </motion.div>
+
+    {/* قصة المهر والخطبة (Card بخطوط ذهبية) */}
+    <div className="grid md:grid-cols-2 gap-8">
+      <motion.div 
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className="p-8 bg-white/[0.02] border border-[#d4af37]/20 rounded-3xl"
+      >
+        <p className="text-xl md:text-2xl font-amiri text-slate-300 leading-relaxed italic">
+          {t("fatimaMarriage.proposal")}
+        </p>
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className="p-8 bg-white/[0.02] border border-[#d4af37]/20 rounded-3xl"
+      >
+        <p className="text-xl md:text-2xl font-amiri text-slate-300 leading-relaxed">
+           <span className="text-[#d4af37] font-bold">المهر: </span>
+          {t("fatimaMarriage.theDowry")}
+        </p>
+      </motion.div>
+    </div>
+
+    {/* البيت النبوي (Full Width) */}
+    <motion.div 
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="p-10 bg-[#10b981]/5 border-y border-[#10b981]/20 text-center"
+    >
+      <p className="text-2xl md:text-3xl font-amiri text-white leading-loose mb-6">
+        {t("fatimaMarriage.simpleHome")}
+      </p>
+      <p className="text-xl md:text-2xl font-amiri text-[#10b981] italic">
+        {t("fatimaMarriage.prophetLove")}
+      </p>
+    </motion.div>
+
+    {/* الخاتمة */}
+    <motion.div className="text-center opacity-80">
+      <p className="text-2xl font-amiri text-slate-400">
+        {t("fatimaMarriage.closing")}
+      </p>
+    </motion.div>
+
+  </div>
+</section>
+<section className="relative py-32 px-6 bg-[#020202] border-y border-white/5 text-right">
+  <div className="max-w-5xl mx-auto space-y-32">
+    
+    {/* العنوان الرئيسي الفخم */}
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="text-center">
+      <h2 className="text-[#10b981] text-2xl font-tufuli mb-4 tracking-[0.2em]">السيرة العسكرية</h2>
+      <h1 className="text-white text-5xl md:text-8xl font-tufuli leading-tight">
+        {t("battlesDetail.title")}
+      </h1>
+    </motion.div>
+
+    {/* غزوة أُحد - ستايل الفداء العميق */}
+    <div className="relative">
+      <div className="absolute -right-4 top-0 h-full w-1 bg-red-600/20" />
+      <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} className="pr-10 space-y-8">
+        <h3 className="text-red-500 text-4xl font-tufuli">{t("battlesDetail.uhud.title")}</h3>
+        <p className="text-2xl md:text-3xl font-amiri text-slate-300 leading-[2] text-justify">
+          {t("battlesDetail.uhud.description")}
+        </p>
+        <div className="p-6 bg-red-900/10 border border-red-900/20 rounded-xl">
+          <p className="text-2xl font-amiri text-red-100 italic text-center">
+            {t("battlesDetail.uhud.quote")}
+          </p>
+        </div>
+      </motion.div>
+    </div>
+    {/* غزوة الخندق - ستايل الحسم والمواجهة */}
+    <div className="relative">
+      <div className="absolute -left-4 top-0 h-full w-1 bg-slate-500/20" />
+      <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} className="pl-10 space-y-8 text-left">
+        <div className="text-right">
+          <h3 className="text-slate-300 text-4xl font-tufuli">{t("battlesDetail.khandaq.title")}</h3>
+          <p className="text-2xl md:text-3xl font-amiri text-slate-400 leading-[2] text-justify mt-6">
+            {t("battlesDetail.khandaq.description")}
+          </p>
+          <p className="text-[#10b981] font-tufuli text-xl mt-4 italic">{t("battlesDetail.khandaq.impact")}</p>
+        </div>
+      </motion.div>
+    </div>
+
+    {/* غزوة خيبر - ستايل الفتح والاعجاز */}
+    <motion.div 
+      initial={{ y: 50, opacity: 0 }} 
+      whileInView={{ y: 0, opacity: 1 }}
+      className="p-12 bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 rounded-[4rem]"
+    >
+      <div className="text-center space-y-10">
+        <h3 className="text-[#10b981] text-5xl font-tufuli">{t("battlesDetail.khaybar.title")}</h3>
+        <p className="text-2xl md:text-4xl font-amiri text-white leading-[2.2] max-w-4xl mx-auto">
+          {t("battlesDetail.khaybar.description")}
+        </p>
+      </div>
+    </motion.div>
+  </div>
+</section>
+<section className="relative py-32 px-6 bg-[#030303] overflow-hidden">
+  <div className="max-w-4xl mx-auto space-y-16 text-right">
+    
+    {/* تمهيد المبارزة */}
+    <div className="text-center space-y-4">
+      <h3 className="text-red-600 font-tufuli text-2xl tracking-[0.3em]">المبارزة الحاسمة</h3>
+      <div className="h-px w-32 bg-red-600/30 mx-auto" />
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-12 relative items-start">
+      {/* سيف فاصل في النص */}
+      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-red-600/50 via-white/10 to-[#10b981]/50 -translate-x-1/2" />
+
+      {/* جانب مرحب - أحمر وداكن */}
+      <motion.div 
+        initial={{ x: 30, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className="p-10 bg-red-900/5 border border-red-900/10 rounded-[2rem] space-y-6"
+      >
+        <span className="text-red-500 font-tufuli text-xl block border-b border-red-900/20 pb-2">
+          {t("battlesDetail.khaybar.khaybarDuel.marhabTitle")}
+        </span>
+        <p className="text-2xl md:text-3xl font-amiri text-slate-400 leading-[1.8] whitespace-pre-line italic">
+          {t("battlesDetail.khaybar.khaybarDuel.marhabPoem")}
+        </p>
+      </motion.div>
+
+      {/* جانب الحيدرة - أخضر وساطع */}
+      <motion.div 
+        initial={{ x: -30, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className="p-10 bg-[#10b981]/5 border border-[#10b981]/20 rounded-[2rem] space-y-6 shadow-[0_0_30px_rgba(16,185,129,0.05)]"
+      >
+        <span className="text-[#10b981] font-tufuli text-2xl block border-b border-[#10b981]/20 pb-2">
+          {t("battlesDetail.khaybar.khaybarDuel.aliTitle")}
+        </span>
+        <p className="text-2xl md:text-4xl font-amiri text-white leading-[1.8] whitespace-pre-line font-bold">
+          {t("battlesDetail.khaybar.khaybarDuel.aliReply")}
+        </p>
+      </motion.div>
+    </div>
+
+    {/* الحسم النهائي */}
+    <motion.div 
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      className="text-center p-12 bg-white/[0.01] border-y border-white/5 rounded-[3rem]"
+    >
+      <p className="text-2xl md:text-3xl font-amiri text-slate-300 leading-relaxed italic max-w-3xl mx-auto">
+        {t("battlesDetail.khaybar.khaybarDuel.description")}
+      </p>
+      {/* توهج خفيف لنصر خيبر */}
+        <div className="inline-block px-10 py-4 bg-[#10b981]/10 rounded-full">
+          <p className="text-[#10b981] text-2xl font-tufuli">{t("battlesDetail.khaybar.khaybarDuel.closing")}</p>
+        </div>
+      <div className="absolute inset-0 bg-[#10b981]/5 blur-[120px] -z-10" />
+    </motion.div>
+
+  </div>
+</section>
+<section className="relative py-32 px-6 bg-[#020202] overflow-hidden text-right">
+  {/* خلفية فنية توحي بالعلم (نقط ضوء خافتة كأنها نجوم أو أفكار) */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(30,58,138,0.1),transparent)] pointer-events-none" />
+
+  <div className="max-w-5xl mx-auto space-y-24 relative z-10">
+    
+    {/* العنوان الرئيسي */}
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="text-center space-y-4"
+    >
+      <h2 className="text-[#d4af37] text-xl font-tufuli tracking-[0.3em] uppercase opacity-80">
+        المنبع الفكري
+      </h2>
+      <h1 className="text-white text-5xl md:text-8xl font-tufuli leading-tight">
+        {t("knowledge.title")}
+      </h1>
+      <div className="h-1 w-40 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-6" />
+    </motion.div>
+
+    {/* المقدمة العميقة */}
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="max-w-4xl mx-auto"
+    >
+      <p className="text-2xl md:text-4xl font-amiri text-slate-300 leading-[2.2] text-justify italic border-r-2 border-[#d4af37]/30 pr-8">
+        {t("knowledge.intro")}
+      </p>
+    </motion.div>
+
+    {/* موقف عمر الفاروق (تصميم مميز) */}
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <motion.div 
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className="p-10 bg-blue-900/5 border border-blue-900/10 rounded-[2.5rem] relative"
+      >
+        <div className="absolute -top-5 right-10 bg-[#020202] px-4 text-blue-400 font-tufuli text-xl">
+          {t("knowledge.umarSection.title")}
+        </div>
+        <p className="text-2xl font-amiri text-slate-200 leading-relaxed mb-6">
+          {t("knowledge.umarSection.text")}
+        </p>
+        <span className="text-blue-400 font-tufuli italic opacity-70">
+          — {t("knowledge.umarSection.impact")}
+        </span>
+      </motion.div>
+
+      {/* سيكشن القضاء والحكمة */}
+      <motion.div 
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className="space-y-6"
+      >
+        <h3 className="text-[#d4af37] text-3xl font-tufuli">
+          {t("knowledge.judgement.title")}
+        </h3>
+        <p className="text-xl md:text-2xl font-amiri text-slate-400 leading-loose">
+          {t("knowledge.judgement.text")}
+        </p>
+      </motion.div>
+    </div>
+
+    {/* قول مأثور ختامي للسيكشن */}
+    <motion.div 
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      className="text-center py-16 border-y border-white/5"
+    >
+      <p className="text-3xl md:text-5xl font-amiri text-white leading-snug">
+        {t("knowledge.quote")}
+      </p>
+    </motion.div>
+
+  </div>
+</section>
+<section className="relative py-32 px-6 bg-[#050505] overflow-hidden text-right border-y border-white/5">
+  {/* إضاءة "خافتة" جداً توحي بالتواضع */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.02),transparent)] pointer-events-none" />
+
+  <div className="max-w-4xl mx-auto space-y-24 relative z-10">
+    
+    {/* رأس السيكشن */}
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="text-center"
+    >
+      <h2 className="text-slate-500 text-lg font-tufuli tracking-widest uppercase mb-4">
+        فلسفة الاستغناء
+      </h2>
+      <h1 className="text-white text-5xl md:text-7xl font-tufuli leading-tight">
+        {t("zuhd.title")}
+      </h1>
+    </motion.div>
+
+    {/* المقدمة القصصية */}
+    <motion.div 
+      initial={{ y: 20, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      className="p-10 border-r-2 border-slate-800 bg-white/[0.01]"
+    >
+      <p className="text-2xl md:text-3xl font-amiri text-slate-300 leading-[2.2] text-justify">
+        {t("zuhd.intro")}
+      </p>
+    </motion.div>
+
+    {/* تفاصيل الزهد (Grid) */}
+    <div className="grid md:grid-cols-2 gap-12">
+      <motion.div 
+        initial={{ x: 20, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className="space-y-6"
+      >
+        <h3 className="text-slate-400 text-2xl font-tufuli border-b border-slate-800 pb-2">
+          {t("zuhd.baytAlMal.title")}
+        </h3>
+        <p className="text-xl font-amiri text-slate-500 leading-loose">
+          {t("zuhd.baytAlMal.text")}
+        </p>
+      </motion.div>
+
+      <motion.div 
+        initial={{ x: -20, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className="space-y-6"
+      >
+        <h3 className="text-slate-400 text-2xl font-tufuli border-b border-slate-800 pb-2">
+          {t("zuhd.theGarment.title")}
+        </h3>
+        <p className="text-xl font-amiri text-slate-500 leading-loose">
+          {t("zuhd.theGarment.text")}
+        </p>
+      </motion.div>
+    </div>
+
+    {/* الكلمة الخالدة في الدنيا */}
+    <motion.div 
+      initial={{ scale: 0.95, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      className="py-16 px-8 rounded-[3rem] bg-gradient-to-b from-white/[0.02] to-transparent text-center"
+    >
+      <p className="text-3xl md:text-5xl font-amiri text-white leading-relaxed italic opacity-90">
+        {t("zuhd.quote")}
+      </p>
+    </motion.div>
+
+  </div>
+</section>
+<section className="relative py-32 px-6 bg-[#020202] text-right overflow-hidden">
+  {/* إضاءة خلفية بلون ذهبي ملكي */}
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d4af37]/5 blur-[150px] rounded-full pointer-events-none" />
+
+  <div className="max-w-6xl mx-auto relative z-10">
+    
+    {/* مقدمة السيكشن */}
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="text-center mb-24 space-y-6"
+    >
+      <h1 className="text-white text-5xl md:text-8xl font-tufuli leading-tight">
+        {t("eloquence.title")}
+      </h1>
+      <p className="text-2xl font-amiri text-slate-400 max-w-3xl mx-auto leading-relaxed">
+        {t("eloquence.intro")}
+      </p>
+    </motion.div>
+
+    {/* شبكة الأقوال (Grid) */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {Object.entries(t.raw("eloquence.quotes")).map(([key, quote], idx) => (
+        <motion.div
+          key={key}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: idx * 0.1 }}
+          whileHover={{ y: -10 }}
+          className="group relative p-8 bg-white/[0.02] border border-white/5 rounded-[2.5rem] hover:border-[#d4af37]/30 transition-all duration-500"
+        >
+          {/* علامة الاقتباس كديكور خلفي */}
+          <span className="absolute top-4 left-6 text-7xl text-white/[0.03] font-serif group-hover:text-[#d4af37]/10 transition-colors"></span>
+          
+          <div className="space-y-6 relative z-10">
+            <span className="inline-block px-4 py-1 rounded-full border border-[#d4af37]/20 text-[#d4af37] text-sm font-tufuli">
+              {quote.tag}
+            </span>
+            <p className="text-2xl md:text-3xl font-amiri text-white leading-snug font-bold">
+              {quote.text}
+            </p>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+
+    {/* تذييل السيكشن */}
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="mt-20 text-center"
+    >
+      <p className="text-xl font-amiri text-slate-500 italic">
+        {t("eloquence.footer")}
+      </p>
+      <div className="mt-8 h-px w-40 bg-gradient-to-r from-transparent via-white/10 to-transparent mx-auto" />
+    </motion.div>
+
+  </div>
+</section>
+<section className="relative py-40 px-6 bg-[#020202] overflow-hidden text-right">
+  {/* تأثيرات خلفية درامية */}
+  <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-red-900/50 to-transparent" />
+  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-white/[0.02] blur-[120px] rounded-full pointer-events-none" />
+
+  <div className="max-w-5xl mx-auto relative z-10 space-y-32">
+    
+    {/* الجزء الأول: الخلافة والعدل */}
+    <motion.div 
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="space-y-8"
+    >
+      <h2 className="text-[#d4af37] text-3xl md:text-5xl font-tufuli">{t("martyrdom.khilafa.title")}</h2>
+      <p className="text-2xl md:text-4xl font-amiri text-slate-300 leading-[2] text-justify">
+        {t("martyrdom.khilafa.text")}
+      </p>
+    </motion.div>
+
+    {/* الجزء الثاني: لحظة الاستشهاد (تصميم مركز) */}
+    <motion.div 
+      initial={{ scale: 0.95, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      className="relative p-12 bg-red-950/10 border-y border-red-900/20 rounded-[4rem] text-center"
+    >
+      <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#020202] px-8 text-red-500 font-tufuli text-2xl">
+        {t("martyrdom.theNight.title")}
+      </div>
+      <p className="text-2xl md:text-3xl font-amiri text-slate-200 leading-loose mb-10">
+        {t("martyrdom.theNight.text")}
+      </p>
+      {/* الكلمة الأيقونية */}
+      <h3 className="text-4xl md:text-7xl font-tufuli text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+        فُزتُ وربِّ الكعبة
+      </h3>
+    </motion.div>
+
+    {/* الجزء الثالث: الوصية والرحيل */}
+    <div className="grid md:grid-cols-2 gap-16 items-center">
+      <motion.div 
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+      >
+        <h3 className="text-slate-400 text-3xl font-tufuli mb-6">{t("martyrdom.will.title")}</h3>
+        <p className="text-xl md:text-2xl font-amiri text-slate-400 leading-relaxed italic border-r-4 border-slate-700 pr-6">
+          {t("martyrdom.will.text")}
+        </p>
+      </motion.div>
+      
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="text-center md:text-left"
+      >
+        <p className="text-3xl md:text-5xl font-amiri text-white leading-snug opacity-90">
+          {t("martyrdom.closing")}
+        </p>
+      </motion.div>
+    </div>
+
+    {/* مسك الختام - خط تلاشي */}
+    <div className="pt-20 text-center">
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+      <span className="inline-block mt-8 text-slate-600 font-tufuli tracking-[0.5em] uppercase">تمت السيرة</span>
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
