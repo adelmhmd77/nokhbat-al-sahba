@@ -1091,7 +1091,7 @@ export default function AliIbnAbiTalib() {
 
     {/* شبكة الأقوال (Grid) */}
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {Object.entries(t.raw("eloquence.quotes")).map(([key, quote], idx) => (
+      {Object.entries(t.raw("eloquence.quotes") as Record<string, { tag: string; text: string }>).map(([key, quote], idx) => (
         <motion.div
           key={key}
           initial={{ opacity: 0, y: 30 }}

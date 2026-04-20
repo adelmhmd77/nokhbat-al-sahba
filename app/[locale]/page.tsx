@@ -372,10 +372,9 @@ export default function Home() {
       <p className="text-2xl text-zinc-300 font-tufuli leading-relaxed mb-8">
         {t('companions.talha.bio')}
       </p>
-
-      <button className="px-8 py-3 border border-amber-500/50 text-amber-500 font-tufuli hover:bg-amber-500 hover:text-black transition-all duration-300 rounded-full">
+      <Link href="/talhah-ibn-ubaydullah" className="px-8 py-3 border border-amber-500/50 text-amber-500 font-tufuli hover:bg-amber-500 hover:text-black transition-all duration-300 rounded-full">
         {t('companions.talha.btn')}
-      </button>
+      </Link>
     </motion.div>
   </div>
 </section>
