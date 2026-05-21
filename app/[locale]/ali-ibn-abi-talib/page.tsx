@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion'; 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import dynamic from 'next/dynamic';
 interface Phase {
@@ -1197,6 +1198,35 @@ export default function AliIbnAbiTalib() {
 
   </div>
 </section>
-    </main>
+      <section className="relative w-full max-w-5xl mx-auto px-6 py-20 z-10 border-t border-white/5 mt-20">
+        <div className="flex flex-col items-center text-center space-y-6">
+          <span className="text-amber-400/60 font-tufuli text-sm tracking-widest uppercase">
+            الصحابي التالي
+          </span>
+          
+          {/* هنا السحر.. الـ Link شغال وبيروح لصفحة سيدنا عمر */}
+          <Link href="/talhah-ibn-ubaydullah" className="group relative">
+            {/* توهج خلف الزرار */}
+            <div className="absolute inset-0 bg-amber-500/20 rounded-full blur-xl group-hover:bg-amber-500/40 transition-all duration-500" />
+            
+            <h2 className="relative text-3xl md:text-5xl font-bold font-tufuli text-white group-hover:text-amber-400 transition-colors duration-500 flex items-center gap-4">
+              <span>طلحه الخير</span>
+              <svg 
+                className="w-8 h-8 md:w-10 md:h-10 transform group-hover:translate-x-[-10px] transition-transform duration-500" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </h2>
+          </Link>
+<p className="text-blue-100/50 font-tufuli text-sm mt-2 leading-loose">
+  انتقل لقراءة قصة الصحابي الذي حمى النبي ﷺ بيده يوم أُحد، 
+  وبذل ماله وروحه حتى لُقِّب بـ <span className="text-amber-400">طلحة الفيّاض</span>
+</p>          
+     </div>
+      </section>
+ </main>
   );
 }

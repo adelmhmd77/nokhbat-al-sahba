@@ -8,6 +8,7 @@ import GoldenVortexScene from '@/app/components/GoldenVortexScene';
 import GoldenRandomNexus from '@/app/components/GoldenVortexScene';
 export default function TalhahIbnUbaydullah() {
   const t = useTranslations('talha');
+  const stageKeys: string[] = ['one', 'two', 'three', 'four'];
 
   return (
     <main className="bg-[#020617] min-h-screen text-[#e2e8f0] selection:bg-[#d4af37] selection:text-black font-sans">
@@ -432,6 +433,397 @@ export default function TalhahIbnUbaydullah() {
 
       </div>
     </section>
-    </main>
+    <section className="relative py-40 px-6 overflow-hidden bg-black">
+      
+      {/* خلفية الشرارات (تعديل الـ Nexus ليكون أسرع وأكثر حدة) */}
+      <div className="absolute inset-0 z-0 opacity-50 scale-125">
+        <GoldenRandomNexus /> 
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
+        
+        {/* عنوان ملحمي مع حركة انقضاض الصقر */}
+        <motion.div 
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 50 }}
+          className="text-center mb-32"
+        >
+          <span className="text-[#d4af37] font-sans tracking-[0.5em] text-sm mb-4 block">THE LIVING MARTYR</span>
+          <h2 className="text-white font-tufuli text-6xl md:text-9xl drop-shadow-[0_0_30px_rgba(212,175,55,0.5)]">
+            {t('uhud.title')}
+          </h2>
+        </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-16 relative">
+          
+          {/* محتوى: الدرع البشري */}
+          <motion.div 
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 50 }}
+            className="relative p-12 bg-gradient-to-br from-[#d4af37]/10 to-transparent border-r-4 border-[#d4af37] backdrop-blur-sm"
+          >
+            <h3 className="text-4xl font-tufuli text-[#d4af37] mb-8">{t('uhud.theShield.title')}</h3>
+            <p className="text-3xl font-amiri leading-loose text-white drop-shadow-md">
+              {t('uhud.theShield.desc')}
+            </p>
+          </motion.div>
+
+          {/* محتوى: التضحية (الجروح) */}
+          <motion.div 
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            className="relative p-12 bg-white/[0.02] border-l-4 border-white/20 backdrop-blur-sm lg:mt-24"
+          >
+            <h3 className="text-4xl font-tufuli text-slate-300 mb-8">{t('uhud.theSacrifice.title')}</h3>
+            <p className="text-2xl font-amiri leading-loose text-slate-400">
+              {t('uhud.theSacrifice.desc')}
+            </p>
+            
+            {/* أيقونة تعبيرية بسيطة (الجنة) */}
+            <div className="mt-8 text-[#d4af37] opacity-50 font-tufuli italic text-xl">
+              أوجبَ طلحة..
+            </div>
+          </motion.div>
+
+        </div>
+
+        {/* تأثير بصري سفلي (خاتم البطولة) */}
+        <motion.div 
+          initial={{ width: 0 }}
+          whileInView={{ width: "100%" }}
+          className="h-px bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mt-32"
+        />
+      </div>
+    </section>
+    <section className="relative py-32 px-6 overflow-hidden bg-[#050505] border-y border-white/5">
+
+  {/* ✨ توهج ذهبي خفيف */}
+  <div className="absolute inset-0 bg-[#d4af37]/[0.03] blur-[140px]" />
+
+  <div className="relative z-10 max-w-7xl mx-auto">
+
+    {/* 🏆 العنوان */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="text-center mb-24 space-y-6"
+    >
+      <span className="text-[#d4af37]/60 tracking-[0.4em] text-sm uppercase">
+        طلحة الفياض
+      </span>
+
+      <h2 className="text-5xl md:text-7xl font-tufuli text-[#fbbf24] drop-shadow-[0_0_25px_rgba(251,191,36,0.2)]">
+        {t("generosity.title")}
+      </h2>
+
+      <p className="text-slate-400 text-xl md:text-2xl font-amiri max-w-3xl mx-auto leading-[2]">
+        {t("generosity.quote")}
+      </p>
+
+      <div className="w-40 h-px bg-gradient-to-r from-transparent via-[#d4af37]/40 to-transparent mx-auto" />
+    </motion.div>
+
+    {/* 📜 الكروت */}
+    <div className="flex flex-col gap-20">
+
+      {/* CARD 1 */}
+      <motion.div
+        initial={{ opacity: 0, x: 80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="flex justify-end"
+      >
+        <div className="max-w-3xl p-12 rounded-[2rem] border border-[#d4af37]/10 bg-gradient-to-b from-[#d4af37]/[0.04] to-transparent backdrop-blur-md shadow-[0_0_40px_rgba(212,175,55,0.08)]">
+          
+          <h3 className="text-3xl md:text-4xl font-tufuli text-[#fbbf24] mb-8">
+            {t("generosity.stories.titles.one")}
+          </h3>
+
+          <p className="text-2xl text-slate-300 leading-[2.1] font-amiri">
+            {t("generosity.stories.details.one")}
+          </p>
+
+        </div>
+      </motion.div>
+
+      {/* CARD 2 */}
+      <motion.div
+        initial={{ opacity: 0, x: -80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="flex justify-start"
+      >
+        <div className="max-w-3xl p-12 rounded-[2rem] border border-emerald-500/10 bg-gradient-to-b from-emerald-500/[0.04] to-transparent backdrop-blur-md shadow-[0_0_40px_rgba(16,185,129,0.08)]">
+          
+          <h3 className="text-3xl md:text-4xl font-tufuli text-emerald-400 mb-8">
+            {t("generosity.stories.titles.two")}
+          </h3>
+
+          <p className="text-2xl text-slate-300 leading-[2.1] font-amiri">
+            {t("generosity.stories.details.two")}
+          </p>
+
+        </div>
+      </motion.div>
+
+      {/* CARD 3 */}
+      <motion.div
+        initial={{ opacity: 0, x: 80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="flex justify-end"
+      >
+        <div className="max-w-3xl p-12 rounded-[2rem] border border-red-900/20 bg-gradient-to-b from-red-900/[0.05] to-transparent backdrop-blur-md shadow-[0_0_40px_rgba(123,0,28,0.08)]">
+          
+          <h3 className="text-3xl md:text-4xl font-tufuli text-red-400 mb-8">
+            {t("generosity.stories.titles.three")}
+          </h3>
+
+          <p className="text-2xl text-slate-300 leading-[2.1] font-amiri">
+            {t("generosity.stories.details.three")}
+          </p>
+
+        </div>
+      </motion.div>
+
+      {/* CARD 4 */}
+      <motion.div
+        initial={{ opacity: 0, x: -80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="flex justify-start"
+      >
+        <div className="max-w-3xl p-12 rounded-[2rem] border border-[#fbbf24]/10 bg-gradient-to-b from-[#fbbf24]/[0.04] to-transparent backdrop-blur-md shadow-[0_0_40px_rgba(251,191,36,0.08)]">
+          
+          <h3 className="text-3xl md:text-4xl font-tufuli text-[#fbbf24] mb-8">
+            {t("generosity.stories.titles.four")}
+          </h3>
+
+          <p className="text-2xl text-slate-300 leading-[2.1] font-amiri">
+            {t("generosity.stories.details.four")}
+          </p>
+
+        </div>
+      </motion.div>
+
+    </div>
+
+  </div>
+</section>
+<section className="relative py-40 px-6 overflow-hidden bg-[#020205] border-b border-white/5 text-right">
+  
+  {/* 🚀 تشغيل النيكسس المطور والسرير في الخلفية لمنح طابع روحاني متوهج */}
+  <GoldenRandomNexus />
+
+  <div className="relative z-10 max-w-5xl mx-auto">
+
+    {/* 👑 المقدمة المحورية العلوية */}
+    <motion.div 
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="text-center mb-32 space-y-6"
+    >
+      <span className="text-[#d4af37]/60 tracking-[0.5em] text-xs uppercase block">
+        THE LIVING MARTYR
+      </span>
+      <h2 className="text-5xl md:text-8xl font-tufuli text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+        {t("status.title")}
+      </h2>
+      <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto my-6" />
+      <p className="text-[#fbbf24] text-2xl md:text-3xl font-amiri max-w-3xl mx-auto leading-relaxed italic">
+        {t("status.subtitle")}
+      </p>
+    </motion.div>
+
+    {/* 🗂️ المحتوى المدمج في لوحة مركزية فخمة ومختلفة */}
+    <div className="space-y-16">
+      
+      {/* الجزء الأول: نبوءة الشهادة */}
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="relative p-12 md:p-16 rounded-[2.5rem] border border-white/5 bg-white/[0.01] backdrop-blur-xl shadow-[0_0_50px_rgba(0,0,0,0.5)]"
+      >
+        {/* لمسة إضاءة علوية ناعمة تعطي إيحاء النور المستمر */}
+        <div className="absolute top-0 right-1/4 left-1/4 h-px bg-gradient-to-r from-transparent via-[#d4af37]/40 to-transparent" />
+        
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-3xl md:text-4xl font-tufuli text-[#fbbf24] mb-8 flex items-center gap-4 justify-start">
+            <span className="w-2 h-2 rounded-full bg-[#d4af37]" />
+            {t("status.prophecy.title")}
+          </h3>
+          <p className="text-2xl text-slate-300 leading-[2.2] font-amiri text-justify">
+            {t("status.prophecy.desc")}
+          </p>
+        </div>
+      </motion.div>
+
+      {/* الجزء الثاني: العشرة المبشرون */}
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="relative p-12 md:p-16 rounded-[2.5rem] border border-[#d4af37]/10 bg-gradient-to-br from-[#d4af37]/[0.02] to-transparent backdrop-blur-xl shadow-[0_0_50px_rgba(212,175,55,0.03)]"
+      >
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-3xl md:text-4xl font-tufuli text-slate-200 mb-8 flex items-center gap-4 justify-start">
+            <span className="w-2 h-2 rounded-full bg-slate-400" />
+            {t("status.paradise.title")}
+          </h3>
+          <p className="text-2xl text-slate-400 leading-[2.2] font-amiri text-justify group-hover:text-slate-300 transition-colors">
+            {t("status.paradise.desc")}
+          </p>
+        </div>
+      </motion.div>
+
+    </div>
+
+  </div>
+</section>
+<section className="relative py-48 px-6 bg-[#030306] border-b border-white/5 overflow-hidden text-right">
+      
+      {/* سديم الإضاءة العميقة لكسر عتمة الخلفية */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-1/3 left-10 w-[500px] h-[500px] rounded-full bg-[#d4af37]/[0.02] blur-[150px]" />
+        <div className="absolute bottom-1/4 right-10 w-[400px] h-[400px] rounded-full bg-amber-500/[0.02] blur-[130px]" />
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto">
+        
+        {/* رأس الفصل الملحمي */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="mb-40 space-y-4"
+        >
+          <span className="text-[#d4af37] font-sans tracking-[0.5em] text-xs uppercase block">
+            The Untold Chapters
+          </span>
+          <h2 className="text-5xl md:text-7xl font-tufuli text-white leading-tight">
+            {t('chronicles.title')}
+          </h2>
+          <p className="text-xl md:text-2xl font-amiri text-slate-400 max-w-2xl pt-2">
+            {t('chronicles.subtitle')}
+          </p>
+          <div className="w-20 h-[1px] bg-[#d4af37]/40 mt-6" />
+        </motion.div>
+
+        {/* سرد المحطات الغنية بستايل النص الحر والمؤثرات الطولية */}
+        <div className="space-y-36 relative">
+          
+          {/* عمود التوجيه المضيء المخفي في الشاشات الصغيرة */}
+          <div className="absolute right-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-[#d4af37]/20 via-white/5 to-transparent hidden md:block" />
+
+          {stageKeys.map((key, index) => (
+            <motion.div 
+              key={key}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              className="relative pr-0 md:pr-12 group"
+            >
+              {/* مؤشر النقطة المتوهجة على الخط الجانبي */}
+              <div className="absolute right-[-6px] top-3 w-3 h-3 rounded-full bg-[#030306] border border-[#d4af37] z-10 hidden md:block group-hover:bg-[#d4af37] transition-colors duration-300" />
+              
+              <div className="grid md:grid-cols-12 gap-6 items-start">
+                
+                {/* العنوان الفرعي الجانبي */}
+                <div className="md:col-span-4 space-y-2">
+                  <span className="text-xs font-mono text-[#d4af37]/50 block">CHRONICLE 0{index + 1}</span>
+                  <h3 className="text-3xl font-tufuli text-slate-100 group-hover:text-[#fbbf24] transition-colors duration-300">
+                    {t(`chronicles.stages.titles.${key}`)}
+                  </h3>
+                </div>
+
+                {/* التفاصيل التاريخية المطولة والمملة بالخط الأميري الكبير */}
+                <div className="md:col-span-8">
+                  <p className="text-2xl font-amiri text-slate-400 group-hover:text-slate-300 leading-[2.2] text-justify transition-colors duration-300">
+                    {t(`chronicles.stages.details.${key}`)}
+                  </p>
+                </div>
+
+              </div>
+            </motion.div>
+          ))}
+
+        </div>
+
+      </div>
+    </section>
+<section className="relative py-40 px-6 bg-[#020204] overflow-hidden border-t border-white/5">
+      
+      {/* 🌌 تأثير البوابة الضوئية الخلفية (تظهر وتتوهج بقوة عند الـ Hover على السيكشن) */}
+      <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
+        <div className="w-[500px] h-[500px] bg-gradient-to-r from-[#d4af37]/5 to-amber-500/5 rounded-full blur-[100px] opacity-60 animate-pulse" />
+        {/* خط هندسي دائري خافت جداً يلتف حول الزر */}
+        <div className="absolute w-[350px] h-[350px] rounded-full border border-dashed border-[#d4af37]/10 animate-[spin_80s_linear_infinite]" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center space-y-8">
+        
+        {/* شارة التنبيه العلوية */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-[#d4af37]/20 bg-[#d4af37]/5"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37] animate-ping" />
+          <span className="text-[#d4af37] font-tufuli text-xs tracking-[0.3em] uppercase">
+            {t('nextCompanion.label')}
+          </span>
+        </motion.div>
+
+        {/* 🌟 الرابط السحري: بوابة الانتقال لسيدنا الزبير */}
+        <Link href="/al-zubayr-ibn-al-awwam" className="group relative inline-block px-12 py-8 rounded-[2.5rem]">
+          
+          {/* خلفية زجاجية تظهر بنعومة فائقة عند الـ Hover */}
+          <div className="absolute inset-0 bg-white/[0.01] border border-white/0 group-hover:border-white/5 group-hover:bg-white/[0.02] rounded-[2.5rem] transition-all duration-500 backdrop-blur-sm" />
+          
+          {/* التوهج الناري خلف الاسم */}
+          <div className="absolute inset-x-12 bottom-4 h-8 bg-amber-500/0 group-hover:bg-amber-500/20 rounded-full blur-xl transition-all duration-500" />
+
+          <div className="relative z-10 flex items-center justify-center gap-6">
+            
+            {/* السهم المتفاعل الموجه جهة اليمين (حسب اتجاه القراءة العربي المنساب) */}
+            <svg 
+              className="w-8 h-8 text-[#d4af37]/40 group-hover:text-[#d4af37] transform group-hover:translate-x-[-8px] transition-all duration-500 ease-out" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+
+            {/* الاسم العملاق الفخم بـ Gradient ذهبي مذهل */}
+            <h2 className="text-4xl md:text-6xl font-tufuli font-bold text-transparent bg-clip-text bg-gradient-to-l from-slate-300 via-white to-slate-300 group-hover:from-[#d4af37] group-hover:to-[#fbbf24] transition-all duration-500 tracking-wide drop-shadow-[0_0_30px_rgba(255,255,255,0.05)] group-hover:drop-shadow-[0_0_30px_rgba(212,175,55,0.2)]">
+              {t('nextCompanion.name')}
+            </h2>
+
+          </div>
+        </Link>
+
+        {/* الوصف السفلي الانسيابي بالخط الأميري المتناسق */}
+        <motion.p 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="text-slate-500 font-amiri text-xl md:text-2xl max-w-xl leading-relaxed transition-colors duration-500 group-hover:text-slate-400"
+        >
+          {t('nextCompanion.desc')}
+        </motion.p>
+
+      </div>
+    </section>
+  </main>
   );
 }
